@@ -34,6 +34,13 @@ void GameCamera::Update()
 	//視点をカメラに伝える。
 	MainCamera().SetPosition(cameraPos);
 
+	//HandsOn 3 遠平面を設定する。
+	MainCamera().SetFar(30000.0f);
+
+	//HandsOn 4 画角を変更してみる。
+	//画角を120度にしてみる。
+	MainCamera().SetViewAngle(CMath::DegToRad(120.0f));
+
 	//カメラ行列を更新する。
 	MainCamera().Update();
 }
