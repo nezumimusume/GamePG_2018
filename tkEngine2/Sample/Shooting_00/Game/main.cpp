@@ -35,12 +35,14 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 
 	//エンジンを初期化。
 	if (Engine().Init(initParam) == true) {
-
 		//カメラを初期化。
 		MainCamera().SetTarget({ 0.0f, 0.0f, 0.0f });
 		MainCamera().SetNear(0.1f);
 		MainCamera().SetFar(15000.0f);
 		MainCamera().SetPosition({ 0.0f, 0.0f, -10000.0f });
+		MainCamera().SetUpdateProjMatrixFunc(CCamera::enUpdateProjMatrixFunc_Ortho);
+		MainCamera().SetWidth(20000.0f);
+		MainCamera().SetHeight(20000.0f * 9.0f / 16.0f);
 		MainCamera().Update();
 
 		//ゲームループを実行。
