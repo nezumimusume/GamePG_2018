@@ -26,10 +26,7 @@ bool Player::Start()
 
 	return true;
 }
-//////////////////////////////////////////////////////////
-// 一定間隔で呼ばれる更新処理。
-//////////////////////////////////////////////////////////
-void Player::Update()
+void Player::MoveAndRotation()
 {
 	CQuaternion qRot = CQuaternion::Identity;
 	if (Pad(0).IsPress(enButtonRight)) {
@@ -82,4 +79,11 @@ void Player::Update()
 	m_skinModelRenderer->SetPosition(m_position);
 	//回転をスキンモデルレンダラーに反映させる。
 	m_skinModelRenderer->SetRotation(qRot);
+}
+//////////////////////////////////////////////////////////
+// 一定間隔で呼ばれる更新処理。
+//////////////////////////////////////////////////////////
+void Player::Update()
+{
+	MoveAndRotation();	//プレイヤーの移動と回転処理はMove関数にまとめたよ。
 }

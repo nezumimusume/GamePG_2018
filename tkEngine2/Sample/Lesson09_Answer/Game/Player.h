@@ -6,6 +6,7 @@ public:
 	~Player();
 	bool Start();
 	void Update();
+	void MoveAndRotation();
 	//////////////////////////////
 	//@‚±‚±‚©‚çƒƒ“ƒo•Ï”B
 	//////////////////////////////
