@@ -162,4 +162,9 @@
       <Filter>Assets\effect\Texture</Filter>
     </CustomBuild>
   </ItemGroup>
+  <ItemGroup>
+    <ImageContentTask Include="Assets\sprite\dummy.png">
+      <Filter>Assets\sprite</Filter>
+    </ImageContentTask>
+  </ItemGroup>
 </Project>

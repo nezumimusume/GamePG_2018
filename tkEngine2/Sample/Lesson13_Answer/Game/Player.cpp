@@ -24,7 +24,8 @@ bool Player::Start()
 	//スキンモデルレンダラーを作成。
 	m_skinModelRenderer = NewGO<prefab::CSkinModelRender>(0);
 	m_skinModelRenderer->Init(L"modelData/AirPlane.cmo", NULL, 0, CSkinModel::enFbxUpAxisY);
-
+	//シーンライトの作成。
+	LightManager().SetAmbientLight({ 10.4f, 10.4f, 10.4f });
 	return true;
 }
 void Player::MoveAndRotation()
