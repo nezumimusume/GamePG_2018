@@ -269,7 +269,7 @@ namespace tkEngine{
 	*@param[in]	func		ゲームオブジェクトが見つかったときに呼ばれるコールバック関数。
 	*/
 	template<class T>
-	static inline void FindGOs(const char* objectName, std::function<void(T* go)> func)
+	static inline void QueryGOs(const char* objectName, std::function<void(T* go)> func)
 	{
 		return GameObjectManager().FindGameObjects<T>(objectName, func);
 	}

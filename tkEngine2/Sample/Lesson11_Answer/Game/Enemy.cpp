@@ -27,6 +27,7 @@ bool Enemy::Start()
 	qRot.SetRotationDeg(CVector3::AxisY, 90.0f);
 	//スキンモデルに回転クォータニオンを設定する。
 	m_skinModelRender->SetRotation(qRot);
+	m_moveSpeed.x = 50.0f;
 	return true;
 }
 //////////////////////////////////////////////////////////
@@ -34,13 +35,15 @@ bool Enemy::Start()
 //////////////////////////////////////////////////////////
 void Enemy::Update()
 {
+	m_position += m_moveSpeed;
+	if (m_position.x < 7000.0f) {
+		//移動方向を変更する。
+		m_moveSpeed.x = 50.0f;
+	}
+	if (m_position.x > 9000.0f) {
+		//移動方向を変更する。
+		m_moveSpeed.x = -50.0f;
+	}
 	//スキンモデルレンダーに座標を伝える。
 	m_skinModelRender->SetPosition(m_position);
-	m_timer++;
-	if (m_timer == 10) {
-		Bullet* bullet = NewGO<Bullet>(0);
-		bullet->m_position = m_position;
-		bullet->m_moveSpeed.x = -400.0f;
-		m_timer = 0.0f;
-	}
 }
