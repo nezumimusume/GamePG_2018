@@ -21,7 +21,7 @@ bool Game::Start()
 	m_animClip[0].Load(L"animData/test.tka");
 	m_animClip[0].SetLoopFlag(true);
 	m_skinModelRender = NewGO<prefab::CSkinModelRender>(0);
-	m_skinModelRender->Init(L"modelData/unityChan.cmo", m_animClip, 1, CSkinModel::enFbxUpAxisY);
+	m_skinModelRender->Init(L"modelData/unityChan.cmo", m_animClip, 1);
 	m_skinModelRender->SetScale({ 0.1f, 0.1f, 0.1f } );
 	
 	return true;
