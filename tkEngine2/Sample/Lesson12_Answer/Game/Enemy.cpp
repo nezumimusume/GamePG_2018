@@ -64,5 +64,6 @@ void Enemy::Update()
 			//€–SB
 			DeleteGO(this);
 		}
+		return true;
 	});
 }
