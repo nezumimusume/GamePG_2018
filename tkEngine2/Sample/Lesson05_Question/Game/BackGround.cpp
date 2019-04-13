@@ -24,7 +24,11 @@ bool BackGround::Start()
 	skinModelRender->SetPosition(pos);
 
 	//HandsOn 2 CPhysicsStaticObject‚Ì‰Šú‰»
-	
+	m_physicsStaticObject.CreateMeshObject(
+		skinModelRender,
+		pos,
+		qRot
+	);
 
 	return true;
 }

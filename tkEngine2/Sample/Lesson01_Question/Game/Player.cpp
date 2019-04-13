@@ -25,15 +25,26 @@ bool Player::Start()
 void Player::Update()
 {
 	//Question 1 キャラを左右に動かしてみよう。
-
-
+	if (Pad(0).IsPress(enButtonRight)) {
+		position.x += 10.0f;
+	}
+	if (Pad(0).IsPress(enButtonLeft)) {
+		position.x -= 10.0f;
+	}
 	//実習課題 キャラを前後に動かしてみよう。	
-
+	if (Pad(0).IsPress(enButtonDown)) {
+		position.z -= 10.0f;
+	}
+	if (Pad(0).IsPress(enButtonUp)) {
+		position.z += 10.0f;
+	}
 
 	//Question 2 キャラクタをジャンプさせてみよう。
-
+	if (Pad(0).IsTrigger(enButtonA)) {
+		jumpPower = 20.0f;
+	}
 	//Question 3 から重力を減算する。
-
+	jumpPower -= 1.0f;
 	//ジャンプ力を座標に加算する。
 	position.y += jumpPower;
 	//キャラクターのY座標が0より小さくなったら

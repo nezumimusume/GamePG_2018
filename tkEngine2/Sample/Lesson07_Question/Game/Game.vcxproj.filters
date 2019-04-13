@@ -206,4 +206,15 @@
       <Filter>Assets\loc</Filter>
     </CustomBuild>
   </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\sound\normalBGM.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\coinGet.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+    <Media Include="Assets\sound\jump.wav">
+      <Filter>Assets\sound</Filter>
+    </Media>
+  </ItemGroup>
 </Project>

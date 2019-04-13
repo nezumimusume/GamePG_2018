@@ -29,7 +29,11 @@ bool Player::Start()
 	skinModelRender->SetShadowCasterFlag(true);
 
 	//HandsOn 4 CCharacterControllerのインスタンスを初期化する。
-	
+	charaCon.Init(
+		20.0f,
+		68.0f,
+		position
+	);
 	
 	return true;
 }
@@ -43,17 +47,20 @@ void Player::Move()
 	/////////////////////////////////////////////////////////////////////////////////
 	//　実習課題 1 Bボタンを押しながら移動すると、移動速度が２倍になるようにしなさい。
 	/////////////////////////////////////////////////////////////////////////////////
+	if (Pad(0).IsPress(enButtonB)) {
+		fSpeed = fSpeed * 2.0f;
+	}
 	/////////////////////////////////////////////////////////////////////////////////
 	//　実習課題 2 Yボタンを押しながら移動すると、移動速度が半分になるようにしなさい。
 	/////////////////////////////////////////////////////////////////////////////////
-	if (Pad(0).IsPress(enButtonB)) {
-		fSpeed *= 2.0f;
+	if (Pad(0).IsPress(enButtonY)) {
+		fSpeed = fSpeed / 2.0f;
 	}
 	if (Pad(0).IsPress(enButtonRight)) { //もしもゲームパッドの右ボタンが押されていたら。
 		moveSpeed.x = fSpeed;
 	}
 	if (Pad(0).IsPress(enButtonLeft)) {  //もしもゲームパッドの左ボタンが推されていたら。
-		moveSpeed.x -= fSpeed;
+		moveSpeed.x = -fSpeed;
 	}
 	if (Pad(0).IsPress(enButtonUp)) {
 		moveSpeed.z = fSpeed;
@@ -72,7 +79,10 @@ void Player::Move()
 	//移動はキャラクターコントローラーに移動速度を与えて行う。
 	//プレイヤーはキャラクタコントローラーによる移動結果を得るのみ。
 	//HandsOn 5 CCharacterControllerを使って、キャラクターを移動させる。
-	
+	position = charaCon.Execute(
+		1.0f,
+		moveSpeed
+	);
 	
 	//モデルに座標を反映させる。
 	skinModelRender->SetPosition(position);

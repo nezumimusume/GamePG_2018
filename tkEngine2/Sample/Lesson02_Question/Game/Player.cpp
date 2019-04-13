@@ -59,13 +59,21 @@ void Player::Move()
 void Player::Rotation()
 {
 	//Question 1 キャラクタを右に向かせてみよう。
-	
+	if (Pad(0).IsPress(enButtonRight)) {
+		rotation.SetRotationDeg(CVector3::AxisY, 90.0f);
+	}
 	//実習課題 1 キャラクタを左に向かせてみよう。
-	
+	if (Pad(0).IsPress(enButtonLeft)) {
+		rotation.SetRotationDeg(CVector3::AxisY, -90.0f);
+	}
 	//実習課題 2 キャラクタを奥に向かせてみよう。
-	
+	if (Pad(0).IsPress(enButtonUp)) {
+		rotation.SetRotationDeg(CVector3::AxisY, 0.0f);
+	}
 	//実習課題 3 キャラクタを手前に向かせてみよう。
-	
+	if (Pad(0).IsPress(enButtonDown)) {
+		rotation.SetRotationDeg(CVector3::AxisY, 180.0f);
+	}
 
 	//モデルに回転を反映させる。
 	skinModelRender->SetRotation(rotation);

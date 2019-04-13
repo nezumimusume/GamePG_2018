@@ -65,7 +65,9 @@ void Star::Update()
 	CVector3 diff = player->position - position;
 	if (diff.Length() < 130.0f) {
 		//HandsOn 2 ƒRƒCƒ“‚ðŽæ“¾‚µ‚½‚Æ‚«‚É‰¹‚ð–Â‚ç‚»‚¤B
-		
+		prefab::CSoundSource* ss = NewGO<prefab::CSoundSource>(0);
+		ss->Init("sound/coinGet.wav");
+		ss->Play(false);
 
 		DeleteGO(this);
 	}

@@ -10,6 +10,6 @@ public:
 	prefab::CSkinModelRender* skinModelRender = nullptr;	//スキンモデルレンダラー。
 
 	//HandsOn 1 BackgroudクラスにCPhysicsStaticObjectのインスタンスを保持させる。
-	
+	CPhysicsStaticObject m_physicsStaticObject;
 };
 

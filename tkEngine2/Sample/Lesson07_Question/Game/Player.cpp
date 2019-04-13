@@ -62,7 +62,9 @@ void Player::Move()
 	if (Pad(0).IsTrigger(enButtonA)) {
 		//ジャンプする。
 		//実習課題　ジャンプ音を再生する。
-	
+		prefab::CSoundSource* ss = NewGO<prefab::CSoundSource>(0);
+		ss->Init("sound/jump.wav");
+		ss->Play(false);
 
 		moveSpeed.y = 40.0f;
 	}

@@ -25,7 +25,7 @@ public:
 	CVector3 position = CVector3::Zero;
 	CQuaternion rotation = CQuaternion::Identity;
 	//HandsOn 3 PlayerクラスにCCharacterControllerのインスタンスを保持させる。
-	
+	CCharacterController charaCon;
 
 	CVector3 moveSpeed = CVector3::Zero;
 };

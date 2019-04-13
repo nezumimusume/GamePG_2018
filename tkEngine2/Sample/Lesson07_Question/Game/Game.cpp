@@ -22,7 +22,9 @@ Game::~Game()
 bool Game::Start()
 {
 	//HandsOn 1 BGM‚ğÄ¶‚µ‚æ‚¤B
-	
+	m_bgmSource = NewGO<prefab::CSoundSource>(0);
+	m_bgmSource->Init("sound/normalBgm.wav");
+	m_bgmSource->Play(true);
 
 	//ƒJƒƒ‰‚ğİ’èB
 	MainCamera().SetTarget({ 0.0f, 100.0f, 0.0f });

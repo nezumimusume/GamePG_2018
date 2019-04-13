@@ -47,7 +47,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 		MainCamera().Update();
 
 		//HandsOn 2 プレイヤーのインスタンスを作成。
-
+		
 
 		//ゲームループを実行。
 		Engine().RunGameLoop();

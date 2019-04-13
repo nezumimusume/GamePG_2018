@@ -99,10 +99,29 @@ void Player::AnimationControl()
 	//////////////////////////////////////////////////////////////////////////
 	//実習課題 1 左右のボタンでも走りアニメーションを再生できるようにしなさい。
 	//////////////////////////////////////////////////////////////////////////
+	
 	//HandsOn 1 走りアニメーションを再生してみよう。	
-	
+	if (isJump == false) {
+		if (Pad(0).IsPress(enButtonUp)) {
+			//ゲームパッドの上ボタンが押されているなら。
+			//走るアニメーションを再生する。
+			skinModelRender->PlayAnimation(enAnimationClip_run);
+		}
+		if (Pad(0).IsPress(enButtonDown)) {
+			//ゲームパッドの下ボタンが押されているなら。
+			//走るアニメーションを再生する。
+			skinModelRender->PlayAnimation(enAnimationClip_run);
+		}
+		else {
+			//何も入力されていなければ立ちアニメーションを再生する。
+			skinModelRender->PlayAnimation(enAnimationClip_idle);
+		}
+	}
 	//HandsOn 2 ジャンプアニメーションを再生してみよう。
-	
+	if (Pad(0).IsTrigger(enButtonA)) {
+		skinModelRender->PlayAnimation(enAnimationClip_jump);
+		isJump = true;
+	}
 }
 void Player::Update()
 {

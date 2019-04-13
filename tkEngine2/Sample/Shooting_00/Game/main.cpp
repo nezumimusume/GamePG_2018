@@ -2,7 +2,11 @@
  *@brief	main.cpp
  */
 #include "stdafx.h"
+#include "Player.h"
+#include "Bullet.h"
+#include "EnemyGenerator.h"
 
+//これがC++、コンソールアプリケーションのmain関数に相当します。
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nCmdShow)
 {
 	UNREFERENCED_PARAMETER(hPrevInstance);
@@ -45,6 +49,9 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 		MainCamera().SetHeight(20000.0f * 9.0f / 16.0f);
 		MainCamera().Update();
 
+		NewGO<EnemyGenerator>(0);
+		NewGO<Player>(0);
+		
 		//ゲームループを実行。
 		Engine().RunGameLoop();
 	}
