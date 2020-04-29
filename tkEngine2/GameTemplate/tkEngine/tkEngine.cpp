@@ -7,9 +7,12 @@
 #include "tkEngine/timer/tkStopwatch.h"
 
 namespace tkEngine {
+	CPad* g_pad[CPad::CONNECT_PAD_MAX];
 	CEngine::CEngine()
 	{
-
+		for (int i = 0; i < CPad::CONNECT_PAD_MAX; i++) {
+			g_pad[i] = &m_pad[i];
+		}
 	}
 	CEngine::~CEngine()
 	{
@@ -18,7 +21,7 @@ namespace tkEngine {
 	bool CEngine::Init(const SInitParam& initParam)
 	{
 		//カレントディレクトリをResourceに。
-		SetCurrentDirectory("Resource");
+		SetCurrentDirectory("Assets");
 		//ウィンドウ初期化。
 		if (!InitWindow(initParam)) {
 			return false;

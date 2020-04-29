@@ -149,7 +149,7 @@ namespace tkEngine{
 	public:
 		CStopwatch				m_sw;
 	};
-
+	extern CPad* g_pad[CPad::CONNECT_PAD_MAX];
 	/*!
 	* @brief	Engineのインスタンスを取得。
 	*/

@@ -58,7 +58,7 @@ namespace tkEngine {
 		}
 		//新規。
 		auto effectFactory = CSkinModelEffectFactory(GraphicsEngine().GetD3DDevice());
-
+		effectFactory.SetDirectory(L"modelData");
 		//ボーンを発見したときのコールバック。
 		auto onFindBone = [&](
 			const wchar_t* boneName,

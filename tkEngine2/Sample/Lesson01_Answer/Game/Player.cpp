@@ -25,21 +25,21 @@ bool Player::Start()
 void Player::Update()
 {
 	//Question 1 キャラを左右に動かしてみよう。
-	if (Pad(0).IsPress(enButtonRight)) { //もしもゲームパッドの右ボタンが押されていたら。
+	if (g_pad[0]->IsPress(enButtonRight)) { //もしもゲームパッドの右ボタンが押されていたら。
 		position.x += 10.0f;
 	}
-	if (Pad(0).IsPress(enButtonLeft)) {  //もしもゲームパッドの左ボタンが推されていたら。
+	if (g_pad[0]->IsPress(enButtonLeft)) {  //もしもゲームパッドの左ボタンが推されていたら。
 		position.x -= 10.0f;
 	}
 	//実習課題 1  キャラを前後に動かしてみよう。
-	if (Pad(0).IsPress(enButtonUp)) {
+	if (g_pad[0]->IsPress(enButtonUp)) {
 		position.z += 10.0f;
 	}
-	if (Pad(0).IsPress(enButtonDown)) {
+	if (g_pad[0]->IsPress(enButtonDown)) {
 		position.z -= 10.0f;
 	}
 	//Question 3 キャラクタをジャンプさせてみよう。
-	if (Pad(0).IsTrigger(enButtonA)) {
+	if (g_pad[0]->IsTrigger(enButtonA)) {
 		ySpeed = 20.0f; //ｙ方向の速度を設定する。
 	}
 	
