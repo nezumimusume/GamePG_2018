@@ -2,13 +2,14 @@
 #include "Player.h"
 
 
-Player::Player()
+void Player::Update()
 {
-}
+	//Hands-On 2 プレイヤーを動かしてみよう
+	position.x -= 1.0f;
+	position.z += 1.0f;
 
-
-Player::~Player()
-{
+	//座標を絵描きさんに教える。
+	skinModelRender->SetPosition(position);
 }
 bool Player::Start()
 {
@@ -21,38 +22,4 @@ bool Player::Start()
 	skinModelRender->SetShadowReceiverFlag(true);
 	skinModelRender->SetShadowCasterFlag(true);
 	return true;
-}
-void Player::Update()
-{
-	//Question 1 キャラを左右に動かしてみよう。
-	if (g_pad[0]->IsPress(enButtonRight)) { //もしもゲームパッドの右ボタンが押されていたら。
-		position.x += 10.0f;
-	}
-	if (g_pad[0]->IsPress(enButtonLeft)) {  //もしもゲームパッドの左ボタンが推されていたら。
-		position.x -= 10.0f;
-	}
-	//実習課題 1  キャラを前後に動かしてみよう。
-	if (g_pad[0]->IsPress(enButtonUp)) {
-		position.z += 10.0f;
-	}
-	if (g_pad[0]->IsPress(enButtonDown)) {
-		position.z -= 10.0f;
-	}
-	//Question 3 キャラクタをジャンプさせてみよう。
-	if (g_pad[0]->IsTrigger(enButtonA)) {
-		ySpeed = 20.0f; //ｙ方向の速度を設定する。
-	}
-	
-	//Question 4 重力の影響を与えてみよう。
-	ySpeed -= 1.0f;
-
-	//Y方向の速度を座標に加算する。
-	position.y += ySpeed;
-	//キャラクターのY座標が0より小さくなったら
-	//ジャンプ力を0にして、キャラのY座標も0にする。
-	if (position.y <= 0.0f) {
-		ySpeed = 0.0f;
-		position.y = 0.0f;
-	}
-	skinModelRender->SetPosition(position);
 }
