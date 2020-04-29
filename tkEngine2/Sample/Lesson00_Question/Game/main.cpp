@@ -2,8 +2,7 @@
  *@brief	main.cpp
  */
 #include "stdafx.h"
-//HandsOn 1 プレイヤークラスの機能を使いたいのでヘッダーファイルをインクルードする。
-
+ //HnadsOn 1 プレイヤークラスの機能を使いたいのでヘッダーファイルをインクルードする。
 
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nCmdShow)
 {
@@ -46,8 +45,8 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 		MainCamera().SetPosition({ 0.0f, 100.0f, 300.0f });
 		MainCamera().Update();
 
-		//HandsOn 2 プレイヤーのインスタンスを作成。
-		
+		//HandsOn-2 プレイヤーのオブジェクトを作成。
+
 
 		//ゲームループを実行。
 		Engine().RunGameLoop();
