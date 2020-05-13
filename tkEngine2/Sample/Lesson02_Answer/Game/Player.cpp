@@ -15,6 +15,10 @@ bool Player::Start()
 	//スキンモデルレンダラーを作成。
 	skinModelRender = NewGO<prefab::CSkinModelRender>(0);
 	skinModelRender->Init(L"modelData/unityChan.cmo");
+	position.x = 100.0f;
+	position.y = 0.0f;
+	position.z = 0.0f;
+	skinModelRender->SetPosition(position);
 	CQuaternion qRot;
 	qRot.SetRotationDeg(CVector3::AxisY, 180.0f);
 	skinModelRender->SetRotation(qRot);
@@ -22,70 +26,56 @@ bool Player::Start()
 	skinModelRender->SetShadowCasterFlag(true);
 	return true;
 }
-//キャラクターの移動処理。
-void Player::Move()
+
+
+
+void Player::Update()
 {
+	//キャラクターの移動処理。
+
+	//Question 1 キャラを左右に動かしてみよう。
 	if (Pad(0).IsPress(enButtonRight)) { //もしもゲームパッドの右ボタンが押されていたら。
-		position.x += 10.0f;
+		position.x += 10.0f;//キーボードの６キー
 	}
 	if (Pad(0).IsPress(enButtonLeft)) {  //もしもゲームパッドの左ボタンが推されていたら。
-		position.x -= 10.0f;
+		position.x -= 10.0f; //キーボードの４キー
 	}
+
+	//Question 2 キャラクターを複製してみよう。
+	if (Pad(0).IsPress(enButtonSelect)) {//もしもゲームパッドのSelectボタンが押されていたら。
+		NewGO<Player>(0); //キーボードのスペースキー
+	}
+
+	//実習課題
+
+	//「もしも、パッドの上ボタンが押されたら」というif文を追加する
+	//パッドの上ボタンが押されたら、画面の奥に移動する
 	if (Pad(0).IsPress(enButtonUp)) {
 		position.z += 10.0f;
 	}
+
+	//実習課題
+	//「もしも、パッドの下ボタンが押されたら」というif文を追加する
+	//パッドの下ボタンが押されたら、画面の手前に移動する
 	if (Pad(0).IsPress(enButtonDown)) {
 		position.z -= 10.0f;
 	}
-	if (Pad(0).IsTrigger(enButtonA)) {
-		ySpeed = 20.0f; //ｙ方向の速度を設定する。
+
+	//Question 3 キャラクターをジャンプさせてみよう。
+	if (Pad(0).IsPress(enButtonA)) {  //もしもゲームパッドのAボタンが推されていたら。
+		position.y += 5.0f; //キーボードのJ キー
 	}
 
-	//重力の影響を与える。
-	ySpeed -= 1.0f;
 
-	//Y方向の速度を座標に加算する。
-	position.y += ySpeed;
+	//Question 4 重力の影響を与える。
+	position.y -= 0.5f;
+
+
 	//キャラクターのY座標が0より小さくなったら
 	//ジャンプ力を0にして、キャラのY座標も0にする。
 	if (position.y <= 0.0f) {
-		ySpeed = 0.0f;
 		position.y = 0.0f;
 	}
 	//モデルに座標を反映させる。
 	skinModelRender->SetPosition(position);
-}
-//キャラクターの回転処理。
-void Player::Rotation()
-{
-	//Question 1 キャラクタを右に向かせてみよう。
-	if (Pad(0).IsPress(enButtonRight)) {
-		rotation.SetRotationDeg(CVector3::AxisY, 90.0f);
-		//rotation.SetRotation(CVector3::AxisY, CMath::PI * 0.5f);	//ラジアン単位の別解。
-	}
-	//実習課題 1 キャラクタを左に向かせてみよう。
-	if (Pad(0).IsPress(enButtonLeft)) {
-		rotation.SetRotationDeg(CVector3::AxisY, -90.0f);
-		//rotation.SetRotation(CVector3::AxisY, CMath::PI * -0.5f);	//ラジアン単位の別解。
-	}
-	//実習課題 2 キャラクタを奥に向かせてみよう。
-	if (Pad(0).IsPress(enButtonUp)) {
-		rotation.SetRotationDeg(CVector3::AxisY, 0.0f);
-		//rotation.SetRotation(CVector3::AxisY, 0.0f);		//ラジアン単位の別解。
-	}
-	//実習課題 3 キャラクタを手前に向かせてみよう。
-	if (Pad(0).IsPress(enButtonDown)) {
-		rotation.SetRotationDeg(CVector3::AxisY, 180.0f);
-		//rotation.SetRotation(CVector3::AxisY, CMath::PI);	//ラジアン単位の別解。
-	}
-
-	//モデルに回転を反映させる。
-	skinModelRender->SetRotation(rotation);
-
-
-}
-void Player::Update()
-{
-	Move();
-	Rotation();
 }
