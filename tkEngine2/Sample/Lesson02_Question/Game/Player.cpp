@@ -37,15 +37,14 @@ void Player::Move()
 	if (Pad(0).IsPress(enButtonDown)) {
 		position.z -= 10.0f;
 	}
-	if (Pad(0).IsTrigger(enButtonA)) {
-		ySpeed = 20.0f; //ｙ方向の速度を設定する。
+	if (Pad(0).IsPress(enButtonA)) {
+		position.y += 5.0f;
 	}
 
 	//重力の影響を与える。
-	ySpeed -= 1.0f;
+	position.y -= 0.5f;
 
 	//Y方向の速度を座標に加算する。
-	position.y += ySpeed;
 	//キャラクターのY座標が0より小さくなったら
 	//ジャンプ力を0にして、キャラのY座標も0にする。
 	if (position.y <= 0.0f) {
