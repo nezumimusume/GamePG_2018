@@ -30,6 +30,7 @@ bool Player::Start()
 
 void Player::Update()
 {
+<<<<<<< HEAD
 	//キャラクターの移動処理。
 
 	//Question 1 キャラクターを左右に動かしてみよう。
@@ -67,6 +68,28 @@ void Player::Update()
 	
 
 
+=======
+	if (Pad(0).IsPress(enButtonRight)) { //もしもゲームパッドの右ボタンが押されていたら。
+		position.x += 10.0f;
+	}
+	if (Pad(0).IsPress(enButtonLeft)) {  //もしもゲームパッドの左ボタンが推されていたら。
+		position.x -= 10.0f;
+	}
+	if (Pad(0).IsPress(enButtonUp)) {
+		position.z += 10.0f;
+	}
+	if (Pad(0).IsPress(enButtonDown)) {
+		position.z -= 10.0f;
+	}
+	if (Pad(0).IsPress(enButtonA)) {
+		position.y += 5.0f;
+	}
+
+	//重力の影響を与える。
+	position.y -= 0.5f;
+
+	//Y方向の速度を座標に加算する。
+>>>>>>> b0a2522240711ef38451584b35669d5750297270
 	//キャラクターのY座標が0より小さくなったら
 	//キャラのY座標も0にする。
 	if (position.y <= 0.0f) {
