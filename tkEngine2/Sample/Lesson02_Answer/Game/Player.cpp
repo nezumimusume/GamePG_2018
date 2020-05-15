@@ -15,7 +15,7 @@ bool Player::Start()
 	//スキンモデルレンダラーを作成。
 	skinModelRender = NewGO<prefab::CSkinModelRender>(0);
 	skinModelRender->Init(L"modelData/unityChan.cmo");
-	position.x = 100.0f;
+	position.x = 0.0f;
 	position.y = 0.0f;
 	position.z = 0.0f;
 	skinModelRender->SetPosition(position);
