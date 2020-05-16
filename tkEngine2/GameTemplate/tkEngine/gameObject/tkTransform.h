@@ -88,12 +88,12 @@ namespace tkEngine{
 	private:
 		CTransform* m_parent = nullptr;							//!<親。
 		std::list<CTransform*> m_children;						//!<子供。
-		CVector3	m_position = CVector3::Zero;				//!<ワールド座標。
-		CQuaternion m_rotation = CQuaternion::Identity;			//!<ワールド回転。
-		CVector3	m_scale = CVector3::Zero;					//!<ワールド拡大率。
-		CVector3	m_localPosition = CVector3::Zero;			//!<ローカル座標。
-		CQuaternion	m_localRotation = CQuaternion::Identity;	//!<ローカル回転。
-		CVector3	m_localScale = CVector3::One;				//!<ローカルスケール。
+		CVector3	m_position;									//!<ワールド座標。
+		CQuaternion m_rotation;									//!<ワールド回転。
+		CVector3	m_scale;									//!<ワールド拡大率。
+		CVector3	m_localPosition;							//!<ローカル座標。
+		CQuaternion	m_localRotation;							//!<ローカル回転。
+		CVector3	m_localScale = {1.0f, 1.0f, 1.0};			//!<ローカルスケール。
 		CMatrix		m_worldMatrix;								//!<ワールド行列。
 	};
 }

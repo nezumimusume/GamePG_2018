@@ -235,9 +235,9 @@ namespace tkEngine{
 			unsigned int			m_ringBufferSize = 0;		//!<リングバッファのサイズ。
 			EnStreamingStatus		m_streamingState = enStreamingBuffering;	//!<ストリーミングステータス。
 			bool					m_is3DSound = false;		//!<3Dサウンド？
-			CVector3				m_position = CVector3::Zero;	//!<音源の座標。3Dサウンドの時に必要。
-			CVector3				m_lastFramePosition = CVector3::Zero;//!<音源の1フレーム前の座標。3Dサウンドの時に必要。
-			CVector3				m_velocity = CVector3::Zero;	//!<速度。3Dサウンドの時に必要・
+			CVector3				m_position;	//!<音源の座標。3Dサウンドの時に必要。
+			CVector3				m_lastFramePosition;//!<音源の1フレーム前の座標。3Dサウンドの時に必要。
+			CVector3				m_velocity;	//!<速度。3Dサウンドの時に必要・
 			FLOAT32 m_emitterAzimuths[INPUTCHANNELS];
 			FLOAT32 m_matrixCoefficients[INPUTCHANNELS * OUTPUTCHANNELS];
 			X3DAUDIO_DSP_SETTINGS m_dspSettings;

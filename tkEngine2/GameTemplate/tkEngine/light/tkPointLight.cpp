@@ -9,9 +9,9 @@ namespace tkEngine{
 	namespace prefab {
 		CPointLight::CPointLight()
 		{
-			light.color = CVector3::One;
-			light.position = CVector3::Zero;
-			light.positionInView = CVector3::Zero;
+			light.color = {1.0f,1.0f,1.0f,1.0f};
+			light.position = g_vec3Zero;
+			light.positionInView = g_vec3Zero;
 			light.attn.Set(10.0f, 1.0f, 0.0f, 0.0f);
 		}
 		CPointLight::~CPointLight()

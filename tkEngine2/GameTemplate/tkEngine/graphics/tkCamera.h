@@ -227,8 +227,8 @@ namespace tkEngine{
 		void CalcScreenPositionFromWorldPosition(CVector2& screenPos, const CVector3& worldPos) const;
 
 #if BUILD_LEVEL != BUILD_LEVEL_MASTER
-		CVector3    m_debugCameraPosition = CVector3::Zero; //!<デバッグカメラの座標。
-		CVector3	m_debugCameraTarget = CVector3::Zero;	//!<デバッグカメラの注視点。
+		CVector3    m_debugCameraPosition ; //!<デバッグカメラの座標。
+		CVector3	m_debugCameraTarget;	//!<デバッグカメラの注視点。
 		bool		m_isDebugCamera = false;
 #endif
 
@@ -242,8 +242,8 @@ namespace tkEngine{
 		CMatrix		m_viewProjectionMatrix;				//!<ビュープロジェクション行列。
 		CMatrix		m_viewMatrixInv;					//!<ビュー行列の逆行列。
 		CMatrix		m_cameraRotation;					//!<カメラの回転行列。
-		CVector3	m_forward = CVector3::Front;		//!<カメラの前方。
-		CVector3	m_right = CVector3::Right;			//!<カメラの右。
+		CVector3	m_forward = g_vec3Front;		//!<カメラの前方。
+		CVector3	m_right = g_vec3Right;			//!<カメラの右。
 		float		m_near;								//!<近平面。
 		float		m_far;								//!<遠平面。
 		float		m_viewAngle;						//!<画角(ラジアン)。

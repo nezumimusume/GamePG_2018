@@ -38,7 +38,7 @@ namespace tkEngine{
 			m_currentKeyFrameNo = 0;
 			m_time = 0.0f;
 			m_isPlaying = true;
-			m_freezeBoneTranslate = CVector3::Zero;
+			m_freezeBoneTranslate = g_vec3Zero;
 		}
 		void SetInterpolateTime(float interpolateTime)
 		{
@@ -114,6 +114,6 @@ namespace tkEngine{
 		float					m_interpolateEndTime;	//!<補完終了時間
 		bool					m_isPlaying = false;	//!<再生中？
 		CSkeleton*				m_skeleton = nullptr;	//!<スケルトン。
-		CVector3				m_freezeBoneTranslate = CVector3::Zero;	//!<フリーズしているボーンの平行移動量。
+		CVector3				m_freezeBoneTranslate = g_vec3Zero;	//!<フリーズしているボーンの平行移動量。
 	};
 }

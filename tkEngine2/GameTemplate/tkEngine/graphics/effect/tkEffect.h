@@ -57,9 +57,9 @@ namespace tkEngine{
 		private:
 			Effekseer::Effect*	m_effect = nullptr;
 			Effekseer::Handle	m_handle = -1;
-			CVector3 m_position = CVector3::Zero;			//!<À•WB
-			CQuaternion m_rotation = CQuaternion::Identity;	//!<‰ñ“]B
-			CVector3 m_scale = CVector3::One;				//!<Šg‘å—¦B
+			CVector3 m_position;			//!<À•WB
+			CQuaternion m_rotation;	//!<‰ñ“]B
+			CVector3 m_scale = {1.0f, 1.0f, 1.0f};				//!<Šg‘å—¦B
 		};
 	}
 }

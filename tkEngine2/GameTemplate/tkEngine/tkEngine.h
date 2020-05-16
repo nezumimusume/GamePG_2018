@@ -157,13 +157,7 @@ namespace tkEngine{
 	{
 		return CEngine::GetInstance();
 	}
-	/*!
-	* @brief	CPadのインスタンスを取得。
-	*/
-	static inline CPad& Pad(int padNo)
-	{
-		return Engine().GetPad(padNo);
-	}
+
 	/*!
 	* @brief	CSoundEngineのインスタンスを取得。
 	*/

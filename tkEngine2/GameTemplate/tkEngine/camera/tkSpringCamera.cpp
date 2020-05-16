@@ -95,7 +95,7 @@ namespace tkEngine {
 			CVector3 newPos = positionNow;
 			if (moveSpeed.Length() < 1.0f) {
 				newPos = positionTarget;
-				moveSpeed = CVector3::Zero;
+				moveSpeed = g_vec3Zero;
 			}
 			else {
 				CVector3 addPos = moveSpeed;
@@ -106,7 +106,7 @@ namespace tkEngine {
 				if (vt.Dot(originalDir) < 0.0f) {
 					//–Ú•WÀ•W‚ð’´‚¦‚½B
 					newPos = positionTarget;
-					moveSpeed = CVector3::Zero;
+					moveSpeed = g_vec3Zero;
 				}
 			}
 			return newPos;
@@ -139,8 +139,8 @@ namespace tkEngine {
 		SetPosition(m_camera->GetPosition());
 		m_isEnableCollisionSolver = isEnableCollisionSolver;
 		m_cameraCollisionSolver.Init(sphereCollisionRadius);
-		m_targetMoveSpeed = CVector3::Zero;
-		m_positionMoveSpeed = CVector3::Zero;
+		m_targetMoveSpeed = g_vec3Zero;
+		m_positionMoveSpeed = g_vec3Zero;
 		m_maxMoveSpeed = maxMoveSpeed;
 		m_isRefresh = true;
 	}

@@ -191,7 +191,7 @@ namespace tkEngine{
 		m_spriteFont = std::make_unique<DirectX::SpriteFont>(m_pd3dDevice, L"font/myfile.spritefont");
 
 		//2DƒJƒƒ‰‚Ì‰Šú‰»B
-		m_2dCamera.SetTarget(CVector3::Zero);
+		m_2dCamera.SetTarget(g_vec3Zero);
 		m_2dCamera.SetPosition({0.0f, 0.0f, -10.0f});
 		m_2dCamera.SetUpdateProjMatrixFunc(CCamera::enUpdateProjMatrixFunc_Ortho);
 		m_2dCamera.SetNear(0.1f);

@@ -10,6 +10,9 @@ namespace tkEngine {
 	namespace prefab {
 		CEffect::CEffect()
 		{
+			m_scale.x = 1.0f;
+			m_scale.y = 1.0f;
+			m_scale.z = 1.0f;
 		}
 		CEffect::~CEffect()
 		{

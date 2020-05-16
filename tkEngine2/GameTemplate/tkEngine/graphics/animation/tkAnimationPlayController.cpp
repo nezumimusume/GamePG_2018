@@ -106,7 +106,7 @@ namespace tkEngine{
 				//ルートボーンを見つけた。
 				CMatrix freezeBoneWorldMatrix;
 				CalcFreezeBoneWorldMatrix(*bone, CMatrix::Identity, freezeBoneWorldMatrix);
-				m_freezeBoneTranslate = CVector3::Zero;
+				m_freezeBoneTranslate = g_vec3Zero;
 				if (freezeBoneInfo.freezeX) {
 					//X軸の移動をフリーズ。
 					m_freezeBoneTranslate.x = freezeBoneWorldMatrix.m[3][0];

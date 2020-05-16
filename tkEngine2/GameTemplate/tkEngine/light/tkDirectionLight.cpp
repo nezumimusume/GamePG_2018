@@ -9,8 +9,8 @@ namespace tkEngine{
 	namespace prefab {
 		CDirectionLight::CDirectionLight()
 		{
-			m_light.color = CVector3::One;
-			m_light.direction = CVector3::Down;
+			m_light.color = {1.0f,1.0f,1.0f,1.0f};
+			m_light.direction = g_vec3Down;
 		}
 		CDirectionLight::~CDirectionLight()
 		{

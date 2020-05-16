@@ -76,7 +76,7 @@ namespace tkEngine {
 			CSprite	m_sprite;				//!<スプライト。
 			CVector3 m_position;			//!<座標。
 			CQuaternion m_rotation;			//!<回転。
-			CVector3 m_scale = CVector3::One;			//!<拡大率。
+			CVector3 m_scale = { 1.0f,1.0f,1.0f };			//!<拡大率。
 			CVector2 m_pivot = CSprite::DEFAULT_PIVOT;	//!<ピボット。
 		};
 	}

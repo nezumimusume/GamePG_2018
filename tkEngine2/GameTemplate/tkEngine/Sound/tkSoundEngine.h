@@ -119,7 +119,7 @@ namespace tkEngine{
 		IXAudio2SubmixVoice* m_submixVoice = nullptr;	//!<サブミックスボイス。
 		DWORD m_channelMask = 0;						//!<オーディオチャンネルマスク。
 		DWORD m_nChannels = 0;							//!<チャンネル数。
-		CVector3 m_listenerPosition = CVector3::Zero;	//!<リスナーの座標。
+		CVector3 m_listenerPosition ;					//!<リスナーの座標。
 		float m_fListenerAngle = 0.0f;
 		bool m_UseListenerCone = false;
 		bool m_fUseInnerRadius = false;

@@ -66,10 +66,10 @@ namespace tkEngine{
 			CMatrix WVP;		//ワールドビュープロジェクション行列。
 			CVector4 mulColor;	//乗算カラー。
 		};
-		CVector3				m_position = CVector3::Zero;	//!<座標。
-		CQuaternion				m_rotation = CQuaternion::Identity;		//!<回転
-		CVector3				m_scale = CVector3::One;
-		CMatrix					m_world = CMatrix::Identity;	//!<ワールド行列。
+		CVector3				m_position ;	//!<座標。
+		CQuaternion				m_rotation ;		//!<回転
+		CVector3				m_scale = { 1.0f,1.0f,1.0f };
+		CMatrix					m_world;						//!<ワールド行列。
 		CShader					m_ps;							//!<ピクセルシェーダー。
 		CShader					m_vs;							//!<頂点シェーダー。
 		CVector4				m_mulColor = CVector4::White;	//!<乗算カラー。

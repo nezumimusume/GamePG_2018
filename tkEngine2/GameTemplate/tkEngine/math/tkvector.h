@@ -55,17 +55,7 @@ namespace tkEngine{
 			float v[3];
 			struct { float x, y, z; };
 		};
-		static const CVector3 Zero;
-		static const CVector3 Right;
-		static const CVector3 Left;
-		static const CVector3 Up;
-		static const CVector3 Down;
-		static const CVector3 Front;
-		static const CVector3 Back;
-		static const CVector3 AxisX;
-		static const CVector3 AxisY;
-		static const CVector3 AxisZ;
-		static const CVector3 One;
+		
 	public:
 		//XMVECTOR�ւ̈Öق̕ϊ��B
 		operator DirectX::XMVECTOR() const
@@ -593,7 +583,18 @@ namespace tkEngine{
 		result.Subtract(v0, v1);
 		return result;
 	}
-}
 
+	const CVector3 g_vec3Zero = { 0.0f,  0.0f,  0.0f };
+	const CVector3 g_vec3Right = { 1.0f,  0.0f,  0.0f };
+	const CVector3 g_vec3Left = { -1.0f,  0.0f,  0.0f };
+	const CVector3 g_vec3Up = { 0.0f,  1.0f,  0.0f };
+	const CVector3 g_vec3Down = { 0.0f, -1.0f,  0.0f };
+	const CVector3 g_vec3Front = { 0.0f,   0.0f,  1.0f };
+	const CVector3 g_vec3Back = { 0.0f,   0.0f, -1.0f };
+	const CVector3 g_vec3AxisX = { 1.0f,  0.0f,  0.0f };
+	const CVector3 g_vec3AxisY = { 0.0f,  1.0f,  0.0f };
+	const CVector3 g_vec3AxisZ = { 0.0f,  0.0f,  1.0f };
+	
+}
 
 #endif // _TKVECTOR_H_

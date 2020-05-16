@@ -10,8 +10,6 @@ namespace tkEngine{
 			collider(NULL),
 			mass(0.0f)
 		{
-			pos = CVector3::Zero;
-			rot = CQuaternion::Identity;
 		}
 		CVector3 pos;				//ç¿ïWÅB
 		CQuaternion rot;			//âÒì]ÅB

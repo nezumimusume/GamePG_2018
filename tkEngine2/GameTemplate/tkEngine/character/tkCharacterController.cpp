@@ -14,8 +14,8 @@ namespace tkEngine {
 		{
 			bool isHit = false;									//衝突フラグ。
 			CVector3 hitPos = CVector3(0.0f, -FLT_MAX, 0.0f);	//衝突点。
-			CVector3 startPos = CVector3::Zero;					//レイの始点。
-			CVector3 hitNormal = CVector3::Zero;				//衝突点の法線。
+			CVector3 startPos = g_vec3Zero;					//レイの始点。
+			CVector3 hitNormal = g_vec3Zero;				//衝突点の法線。
 			btCollisionObject* me = nullptr;					//自分自身。自分自身との衝突を除外するためのメンバ。
 			float dist = FLT_MAX;								//衝突点までの距離。一番近い衝突点を求めるため。FLT_MAXは単精度の浮動小数点が取りうる最大の値。
 
@@ -31,7 +31,7 @@ namespace tkEngine {
 				//衝突点の法線を引っ張ってくる。
 				CVector3 hitNormalTmp = *(CVector3*)&convexResult.m_hitNormalLocal;
 				//上方向と法線のなす角度を求める。
-				float angle = hitNormalTmp.Dot(CVector3::Up);
+				float angle = hitNormalTmp.Dot(g_vec3Up);
 				angle = fabsf(acosf(angle));
 				if (angle < CMath::PI * 0.3f		//地面の傾斜が54度より小さいので地面とみなす。
 					|| convexResult.m_hitCollisionObject->getUserIndex() == enCollisionAttr_Ground //もしくはコリジョン属性が地面と指定されている。
@@ -57,10 +57,10 @@ namespace tkEngine {
 		struct SweepResultWall : public btCollisionWorld::ConvexResultCallback
 		{
 			bool isHit = false;						//衝突フラグ。
-			CVector3 hitPos = CVector3::Zero;		//衝突点。
-			CVector3 startPos = CVector3::Zero;		//レイの始点。
+			CVector3 hitPos ;						//衝突点。
+			CVector3 startPos;						//レイの始点。
 			float dist = FLT_MAX;					//衝突点までの距離。一番近い衝突点を求めるため。FLT_MAXは単精度の浮動小数点が取りうる最大の値。
-			CVector3 hitNormal = CVector3::Zero;	//衝突点の法線。
+			CVector3 hitNormal ;					//衝突点の法線。
 			btCollisionObject* me = nullptr;		//自分自身。自分自身との衝突を除外するためのメンバ。
 													//衝突したときに呼ばれるコールバック関数。
 			virtual	btScalar	addSingleResult(btCollisionWorld::LocalConvexResult& convexResult, bool normalInWorldSpace)
@@ -73,7 +73,7 @@ namespace tkEngine {
 				CVector3 hitNormalTmp;
 				hitNormalTmp.Set(convexResult.m_hitNormalLocal);
 				//上方向と衝突点の法線のなす角度を求める。
-				float angle = fabsf(acosf(hitNormalTmp.Dot(CVector3::Up)));
+				float angle = fabsf(acosf(hitNormalTmp.Dot(g_vec3Up)));
 				if (angle >= CMath::PI * 0.3f		//地面の傾斜が54度以上なので壁とみなす。
 					|| convexResult.m_hitCollisionObject->getUserIndex() == enCollisionAttr_Character	//もしくはコリジョン属性がキャラクタなので壁とみなす。
 					) {

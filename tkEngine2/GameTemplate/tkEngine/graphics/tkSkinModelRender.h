@@ -152,9 +152,9 @@ namespace prefab{
 	private:
 		CAnimationClip*				m_animationClips = nullptr;			//!<アニメーションクリップ。
 		int							m_numAnimationClips = 0;			//!<アニメーションクリップの数。
-		CVector3 					m_position = CVector3::Zero;		//!<座標。
-		CQuaternion	 				m_rotation = CQuaternion::Identity;	//!<回転。
-		CVector3					m_scale = CVector3::One;			//!<拡大率。
+		CVector3 					m_position ;						//!<座標。
+		CQuaternion	 				m_rotation;							//!<回転。
+		CVector3					m_scale = {1.0f,1.0f,1.0f};			//!<拡大率。
 		CSkinModel::EnFbxUpAxis		m_enFbxUpAxis = CSkinModel::enFbxUpAxisZ;	//!<FBXの上方向。
 		CAnimation					m_animation;						//!<アニメーション。
 		CSkinModel					m_skinModel;						//!<スキンモデル。

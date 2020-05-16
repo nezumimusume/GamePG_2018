@@ -110,7 +110,7 @@ namespace tkEngine{
 		const CVector3& GetRealTarget() const
 		{
 			if (m_camera == nullptr) {
-				return CVector3::Zero;
+				return g_vec3Zero;
 			}
 			return m_camera->GetTarget();
 
@@ -121,7 +121,7 @@ namespace tkEngine{
 		const CVector3& GetRealPosition() const
 		{
 			if (m_camera == nullptr) {
-				return CVector3::Zero;
+				return g_vec3Zero;
 			}
 			return m_camera->GetPosition();
 		}
@@ -177,8 +177,8 @@ namespace tkEngine{
 		*/
 		void Refresh()
 		{
-			m_targetMoveSpeed = CVector3::Zero;
-			m_positionMoveSpeed = CVector3::Zero;
+			m_targetMoveSpeed = g_vec3Zero;
+			m_positionMoveSpeed = g_vec3Zero;
 			m_isRefresh = true;
 		}
 		/*!
@@ -202,10 +202,10 @@ namespace tkEngine{
 		}
 	private:
 		CCamera*	m_camera = nullptr;				//!<カメラ。
-		CVector3	m_target = CVector3::Zero;		//!<目標となる注視点。
-		CVector3	m_position = CVector3::Zero;	//!<目標となる視点。
-		CVector3	m_targetMoveSpeed = CVector3::Zero;		//!<注視点の移動速度。
-		CVector3	m_positionMoveSpeed = CVector3::Zero;	//!<視点の移動速度。
+		CVector3	m_target ;						//!<目標となる注視点。
+		CVector3	m_position ;					//!<目標となる視点。
+		CVector3	m_targetMoveSpeed ;				//!<注視点の移動速度。
+		CVector3	m_positionMoveSpeed ;			//!<視点の移動速度。
 		float		m_maxMoveSpeed = 0.0f;					//!<最高移動速度。
 		float		m_targetDampingRate = 1.0f;				//!<減衰率。値が大きいほどカメラが遅れ付いてくる。
 		float		m_dampingRate = 1.0f;					//!<減衰率。

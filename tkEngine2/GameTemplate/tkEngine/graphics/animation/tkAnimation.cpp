@@ -66,7 +66,7 @@ namespace tkEngine{
 		CVector3* vGlobalPose = (CVector3*)alloca(sizeof(CVector3) * numBone);
 		for (int i = 0; i < numBone; i++) {
 			qGlobalPose[i] = CQuaternion::Identity;
-			vGlobalPose[i] = CVector3::Zero;
+			vGlobalPose[i] = g_vec3Zero;
 		}
 		//グローバルポーズを計算していく。
 		int startIndex = m_startAnimationPlayController;

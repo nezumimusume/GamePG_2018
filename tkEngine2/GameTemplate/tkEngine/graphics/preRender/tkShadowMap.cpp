@@ -98,10 +98,10 @@ namespace tkEngine{
 		CVector3 lightViewUp;
 		if (fabsf(lightViewForward.y) > 0.999f) {
 			//ÇŸÇ⁄ê^è„ÅB
-			lightViewUp.Cross(lightViewForward, CVector3::Right);
+			lightViewUp.Cross(lightViewForward, g_vec3Right);
 		}
 		else {
-			lightViewUp.Cross(lightViewForward, CVector3::Up);
+			lightViewUp.Cross(lightViewForward, g_vec3Up);
 		}
 		lightViewUp.Normalize();
 		CVector3 lgihtViewRight;
