@@ -9,7 +9,7 @@ public:
 
 	//ここからメンバ変数。
 	prefab::CSkinModelRender* skinModelRender = nullptr;	//スキンモデルレンダラー。
-	CVector3 position = CVector3::Zero;
+	CVector3 position = g_vec3Zero;
 
 };
 
