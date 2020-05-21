@@ -721,6 +721,43 @@
     <CustomBuild Include="Assets\effect\Texture\Wind01.png" />
     <CustomBuild Include="Assets\effect\Texture\wind02.png" />
   </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Assets\animData\clear.tka">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="Assets\animData\damage.tka">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="Assets\animData\idle.tka">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="Assets\animData\jump.tka">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="Assets\animData\KneelDown.tka">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="Assets\animData\run.tka">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'">
+      </Command>
+    </CustomBuild>
+    <CustomBuild Include="Assets\animData\walk.tka">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'">
+      </Command>
+    </CustomBuild>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="$(VCTargetsPath)\BuildCustomizations\ImageContentTask.targets" />

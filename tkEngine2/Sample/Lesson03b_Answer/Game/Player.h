@@ -13,5 +13,14 @@ public:
 	prefab::CSkinModelRender* skinModelRender = nullptr;	//スキンモデルレンダラー。
 	CVector3 position ;
 	CQuaternion rotation ;
+	enum {
+		enAnimationClip_idle,
+		enAnimationClip_run,
+		enAnimationClip_jump,
+		enAnimationClip_num,
+	};
+	CAnimationClip animationClips[enAnimationClip_num];		//アニメーションクリップ。
+	bool isJump = false;
+
 };
 

@@ -168,5 +168,26 @@
     <CustomBuild Include="Assets\effect\Texture\wind02.png">
       <Filter>Assets\effect\Texture</Filter>
     </CustomBuild>
+    <CustomBuild Include="Assets\animData\clear.tka">
+      <Filter>Assets\animData</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\animData\damage.tka">
+      <Filter>Assets\animData</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\animData\idle.tka">
+      <Filter>Assets\animData</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\animData\jump.tka">
+      <Filter>Assets\animData</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\animData\KneelDown.tka">
+      <Filter>Assets\animData</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\animData\run.tka">
+      <Filter>Assets\animData</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Assets\animData\walk.tka">
+      <Filter>Assets\animData</Filter>
+    </CustomBuild>
   </ItemGroup>
 </Project>

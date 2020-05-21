@@ -19,8 +19,8 @@ public:
 	prefab::CSkinModelRender* skinModelRender = nullptr;	//スキンモデルレンダラー。
 	CAnimationClip animationClips[enAnimationClip_num];		//アニメーションクリップ。
 
-	CVector3 position = CVector3::Zero;
-	CQuaternion rotation = CQuaternion::Identity;
+	CVector3 position ;
+	CQuaternion rotation;
 	bool isJump = false;
 	float ySpeed = 0.0f;
 };
