@@ -19,13 +19,10 @@ bool Player::Start()
 	position.y = 0.0f;
 	position.z = 0.0f;
 	skinModelRender->SetPosition(position);
-	CQuaternion qRot;
-	qRot.SetRotationDeg(g_vec3AxisY, 180.0f);
-	skinModelRender->SetRotation(qRot);
+	rotation.SetRotationDeg(g_vec3AxisY, 180.0f);
+	skinModelRender->SetRotation(rotation);
 	skinModelRender->SetShadowReceiverFlag(true);
 	skinModelRender->SetShadowCasterFlag(true);
-
-	Rotation();
 
 	return true;
 }
@@ -70,29 +67,6 @@ void Player::Move() {
 
 void Player::Rotation()
 {
-	//キャラクターの回転処理。
-
-	//Question 1 キャラクターを右に向かせてみよう。
-	rotation.SetRotationDeg(g_vec3AxisY, 90.0f);
-
-	//Question 2 キャラクターを左に向かせてみよう。
-	rotation.SetRotationDeg(g_vec3AxisY, 270.0f);
-
-	//Question 3 キャラクターを奥に向かせてみよう。
-	rotation.SetRotationDeg(g_vec3AxisY, 0.0f);
-
-	//Question 4 キャラクターを手前に向かせてみよう。
-	rotation.SetRotationDeg(g_vec3AxisY, 180.0f);
-
-	//回転を絵描きさんに教える。
-	skinModelRender->SetRotation(rotation);
-}
-
-
-void Player::Update()
-{
-	
-
 	//パッドの入力でキャラクターの回転処理。
 
 	//Question 5 キャラクターを右に向かせてみよう。
@@ -118,5 +92,15 @@ void Player::Update()
 
 	//回転を絵描きさんに教える。
 	skinModelRender->SetRotation(rotation);
+}
+
+
+void Player::Update()
+{
+	//Move();
+	//Rotation();
+	
+
+
 
 }
