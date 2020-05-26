@@ -109,45 +109,46 @@ void Player::Rotation()
 
 void Player::Update()
 {
-	//Move();
-	//Rotation();
+	Move();
+	Rotation();
 	
-	//if (isJump == false) {
-	//	//////////////////////////////////////////////////////////////////////////
-	//	//実習課題 1 左右のボタンでも走りアニメーションを再生できるようにしなさい。
-	//	//////////////////////////////////////////////////////////////////////////
-	//	//HandsOn 1 走りアニメーションを再生してみよう。
-	//	if (g_pad[0]->IsPress(enButtonUp)) {
-	//		//ゲームパッドの上ボタンが押されているなら。
-	//		//走るアニメーションを再生する。
-	//		skinModelRender->PlayAnimation(enAnimationClip_run);
-	//	}
-	//	else if (g_pad[0]->IsPress(enButtonDown)) {
-	//		//ゲームパッドの下ボタンが押されているなら。
-	//		//走るアニメーションを再生する。
-	//		skinModelRender->PlayAnimation(enAnimationClip_run);
-	//	}
-	//	else if (g_pad[0]->IsPress(enButtonRight)) {
-	//		//ゲームパッドの右ボタンが押されているなら。
-	//		skinModelRender->PlayAnimation(enAnimationClip_run);
-	//	}
-	//	else if (g_pad[0]->IsPress(enButtonLeft)) {
-	//		//ゲームパッドの左ボタンが押されているなら。
-	//		skinModelRender->PlayAnimation(enAnimationClip_run);
-	//	}
-	//	else {
-	//		//何も入力されていなければ立ちアニメーションを再生する。
-	//		skinModelRender->PlayAnimation(enAnimationClip_idle);
-	//	}
-	//}
-	////ジャンプ中でなければ。
-	////HandsOn 2 ジャンプアニメーションを再生してみよう。
-	//if (g_pad[0]->IsTrigger(enButtonA)) {
-	//	skinModelRender->PlayAnimation(enAnimationClip_jump);
-	//	isJump = true;	//ジャンプ中のフラグを立てる。
-	//}
+	if (isJump == false) { //ジャンプ中でなければ
+		
+		//HandsOn 1 走りアニメーションを再生してみよう。
+		if (g_pad[0]->IsPress(enButtonUp)) {
+			//ゲームパッドの上ボタンが押されているなら。
+			//走るアニメーションを再生する。
+			skinModelRender->PlayAnimation(enAnimationClip_run);
+		}
+		else if (g_pad[0]->IsPress(enButtonDown)) {
+			//ゲームパッドの下ボタンが押されているなら。
+			//走るアニメーションを再生する。
+			skinModelRender->PlayAnimation(enAnimationClip_run);
+		}
+		else if (g_pad[0]->IsPress(enButtonRight)) {
+			//ゲームパッドの右ボタンが押されているなら。
+			//走るアニメーションを再生する。
+			skinModelRender->PlayAnimation(enAnimationClip_run);
+		}
+		else if (g_pad[0]->IsPress(enButtonLeft)) {
+			//ゲームパッドの左ボタンが押されているなら。
+			//走るアニメーションを再生する。
+			skinModelRender->PlayAnimation(enAnimationClip_run);
+		}
+		else {
+			//何も入力されていなければ
+			//立ちアニメーションを再生する。
+			skinModelRender->PlayAnimation(enAnimationClip_idle);
+		}
+	}
+	//ジャンプ中でなければ。
+	//HandsOn 2 ジャンプアニメーションを再生してみよう。
+	if (g_pad[0]->IsTrigger(enButtonA)) {
+		skinModelRender->PlayAnimation(enAnimationClip_jump);
+		isJump = true;	//ジャンプ中のフラグを立てる。
+	}
 
 
-
+	
 
 }
