@@ -23,7 +23,7 @@ bool Player::Start()
 	skinModelRender = NewGO<prefab::CSkinModelRender>(0);
 	skinModelRender->Init(L"modelData/unityChan.cmo", animationClips, enAnimationClip_num, CSkinModel::enFbxUpAxisY);
 
-	rotation.SetRotationDeg(CVector3::AxisY, 180.0f);
+	rotation.SetRotationDeg(g_vec3AxisY, 180.0f);
 
 	skinModelRender->SetShadowReceiverFlag(true);
 	skinModelRender->SetShadowCasterFlag(true);
@@ -50,7 +50,7 @@ void Player::Move()
 	/////////////////////////////////////////////////////////////////////////////////
 	//　実習課題 2 Yボタンを押しながら移動すると、移動速度が半分になるようにしなさい。
 	/////////////////////////////////////////////////////////////////////////////////
-	if (Pad(0).IsPress(enButtonB)) {
+	if (g_pad[0]->IsPress(enButtonB)) {
 		fSpeed *= 2.0f;
 	}
 	if (Pad(0).IsPress(enButtonRight)) { //もしもゲームパッドの右ボタンが押されていたら。
