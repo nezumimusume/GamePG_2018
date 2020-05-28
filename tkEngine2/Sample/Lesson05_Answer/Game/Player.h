@@ -22,11 +22,11 @@ public:
 	CAnimationClip animationClips[enAnimationClip_num];		//アニメーションクリップ。
 
 	
-	CVector3 position = CVector3::Zero;
-	CQuaternion rotation = CQuaternion::Identity;
+	CVector3 position ;
+	CQuaternion rotation ;
 	//HandsOn 3 PlayerクラスにCCharacterControllerのインスタンスを保持させる。
 	CCharacterController charaCon;	//キャラクターコントローラ。
 
-	CVector3 moveSpeed = CVector3::Zero;
+	CVector3 moveSpeed ;
 };
 
