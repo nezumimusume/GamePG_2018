@@ -23,6 +23,11 @@ bool Player::Start()
 	skinModelRender = NewGO<prefab::CSkinModelRender>(0);
 	skinModelRender->Init(L"modelData/unityChan.cmo", animationClips, enAnimationClip_num, CSkinModel::enFbxUpAxisY);
 
+	position.x = 0.0f;
+	position.y = 0.0f;
+	position.z = -2500.0f;
+	skinModelRender->SetPosition(position);
+
 	rotation.SetRotationDeg(g_vec3AxisY, 180.0f);
 
 	skinModelRender->SetShadowReceiverFlag(true);

@@ -20,7 +20,7 @@ bool Game::Start()
 	g_camera3D->SetTarget({ 0.0f, 0.0f, 0.0f });
 	g_camera3D->SetNear(0.1f);
 	g_camera3D->SetFar(3000.0f);
-	g_camera3D->SetPosition({ 0.0f, 100.0f, -250.0f });
+	g_camera3D->SetPosition({ 0.0f, 0.0f, -2750.0f });
 	g_camera3D->Update();
 
 	m_player = NewGO<Player>(0, "UnityChan");
