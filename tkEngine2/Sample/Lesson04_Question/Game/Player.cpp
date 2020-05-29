@@ -34,31 +34,37 @@ bool Player::Start()
 //キャラクターの移動処理。
 void Player::Move()
 {
+	//キャラクターの移動処理。
+
 	if (g_pad[0]->IsPress(enButtonRight)) { //もしもゲームパッドの右ボタンが押されていたら。
-		position.x += 10.0f;
+		position.x += 10.0f;                      //キーボードの６キー
 	}
 	if (g_pad[0]->IsPress(enButtonLeft)) {  //もしもゲームパッドの左ボタンが推されていたら。
-		position.x -= 10.0f;
+		position.x -= 10.0f;                      //キーボードの４キー
 	}
-	if (g_pad[0]->IsPress(enButtonUp)) {
-		position.z += 10.0f;
+	if (g_pad[0]->IsPress(enButtonUp)) {  //もしもゲームパッドの上ボタンが推されていたら。
+		position.z += 10.0f;                    //キーボードの８キー
 	}
-	if (g_pad[0]->IsPress(enButtonDown)) {
-		position.z -= 10.0f;
-	}
-	if (g_pad[0]->IsTrigger(enButtonA)) {
-		ySpeed = 20.0f; //ｙ方向の速度を設定する。
+	if (g_pad[0]->IsPress(enButtonDown)) {  //もしもゲームパッドの下ボタンが推されていたら。
+		position.z -= 10.0f;                      //キーボードの２キー
 	}
 
+	//キャラクターを複製してみよう。
+	if (g_pad[0]->IsTrigger(enButtonSelect)) {//もしもゲームパッドのSelectボタンが押されていたら。
+		NewGO<Player>(0);                           //キーボードのスペースキー
+	}
+
+	//キャラクターをジャンプさせてみよう。
+	if (g_pad[0]->IsPress(enButtonA)) {  //もしもゲームパッドのAボタンが推されていたら。
+		position.y += 5.0f;                    //キーボードのJ キー
+	}
 	//重力の影響を与える。
-	ySpeed -= 1.0f;
+	position.y -= 0.5f;
 
-	//Y方向の速度を座標に加算する。
-	position.y += ySpeed;
+
 	//キャラクターのY座標が0より小さくなったら
 	//ジャンプ力を0にして、キャラのY座標も0にする。
 	if (position.y <= 0.0f) {
-		ySpeed = 0.0f;
 		position.y = 0.0f;
 		isJump = false;
 	}
@@ -68,22 +74,22 @@ void Player::Move()
 //キャラクターの回転処理。
 void Player::Rotation()
 {
-	//Question 1 キャラクタを右に向かせてみよう。
+	//キャラクタを右に向かせてみよう。
 	if (g_pad[0]->IsPress(enButtonRight)) {
 		rotation.SetRotationDeg(g_vec3AxisY, 90.0f);
 		//rotation.SetRotation(g_vec3AxisY, CMath::PI * 0.5f);	//ラジアン単位の別解。
 	}
-	//実習課題 1 キャラクタを左に向かせてみよう。
+	//キャラクタを左に向かせてみよう。
 	if (g_pad[0]->IsPress(enButtonLeft)) {
 		rotation.SetRotationDeg(g_vec3AxisY, -90.0f);
 		//rotation.SetRotation(g_vec3AxisY, CMath::PI * -0.5f);	//ラジアン単位の別解。
 	}
-	//実習課題 2 キャラクタを奥に向かせてみよう。
+	//キャラクタを奥に向かせてみよう。
 	if (g_pad[0]->IsPress(enButtonUp)) {
 		rotation.SetRotationDeg(g_vec3AxisY, 0.0f);
 		//rotation.SetRotation(g_vec3AxisY, 0.0f);		//ラジアン単位の別解。
 	}
-	//実習課題 3 キャラクタを手前に向かせてみよう。
+	//キャラクタを手前に向かせてみよう。
 	if (g_pad[0]->IsPress(enButtonDown)) {
 		rotation.SetRotationDeg(g_vec3AxisY, 180.0f);
 		//rotation.SetRotation(g_vec3AxisY, CMath::PI);	//ラジアン単位の別解。
@@ -96,10 +102,8 @@ void Player::Rotation()
 void Player::AnimationControl()
 {
 	if (isJump == false) {
-		//////////////////////////////////////////////////////////////////////////
-		//実習課題 1 左右のボタンでも走りアニメーションを再生できるようにしなさい。
-		//////////////////////////////////////////////////////////////////////////
-		//HandsOn 1 走りアニメーションを再生してみよう。
+
+		//走りアニメーションを再生してみよう。
 		if (g_pad[0]->IsPress(enButtonUp)) {
 			//ゲームパッドの上ボタンが押されているなら。
 			//走るアニメーションを再生する。
@@ -112,10 +116,12 @@ void Player::AnimationControl()
 		}
 		else if (g_pad[0]->IsPress(enButtonRight)) {
 			//ゲームパッドの右ボタンが押されているなら。
+			//走るアニメーションを再生する。
 			skinModelRender->PlayAnimation(enAnimationClip_run);
 		}
 		else if (g_pad[0]->IsPress(enButtonLeft)) {
 			//ゲームパッドの左ボタンが押されているなら。
+			//走るアニメーションを再生する。
 			skinModelRender->PlayAnimation(enAnimationClip_run);
 		}
 		else {
@@ -124,7 +130,7 @@ void Player::AnimationControl()
 		}
 	}
 	//ジャンプ中でなければ。
-	//HandsOn 2 ジャンプアニメーションを再生してみよう。
+	//ジャンプアニメーションを再生してみよう。
 	if (g_pad[0]->IsTrigger(enButtonA)) {
 		skinModelRender->PlayAnimation(enAnimationClip_jump);
 		isJump = true;	//ジャンプ中のフラグを立てる。
