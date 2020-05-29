@@ -23,7 +23,7 @@ bool Player::Start()
 	skinModelRender = NewGO<prefab::CSkinModelRender>(0);
 	skinModelRender->Init(L"modelData/unityChan.cmo", animationClips, enAnimationClip_num, CSkinModel::enFbxUpAxisY);
 
-	rotation.SetRotationDeg(CVector3::AxisY, 180.0f);
+	rotation.SetRotationDeg(g_vec3AxisY, 180.0f);
 
 	skinModelRender->SetShadowReceiverFlag(true);
 	skinModelRender->SetShadowCasterFlag(true);
@@ -38,37 +38,37 @@ bool Player::Start()
 	return true;
 }
 //キャラクターの移動処理。
-void Player::Move()
+void Player::MoveSpeed()
 {
-	float fSpeed = 20.0f;
+	float fSpeed = 10.0f;
 	moveSpeed.x = 0.0f;
 	moveSpeed.z = 0.0f;
 	
 	/////////////////////////////////////////////////////////////////////////////////
 	//　実習課題 1 Bボタンを押しながら移動すると、移動速度が２倍になるようにしなさい。
 	/////////////////////////////////////////////////////////////////////////////////
-	if (Pad(0).IsPress(enButtonB)) {
+	if (g_pad[0]->IsPress(enButtonB)) {
 		fSpeed = fSpeed * 2.0f;
 	}
 	/////////////////////////////////////////////////////////////////////////////////
 	//　実習課題 2 Yボタンを押しながら移動すると、移動速度が半分になるようにしなさい。
 	/////////////////////////////////////////////////////////////////////////////////
-	if (Pad(0).IsPress(enButtonY)) {
+	if (g_pad[0]->IsPress(enButtonY)) {
 		fSpeed = fSpeed / 2.0f;
 	}
-	if (Pad(0).IsPress(enButtonRight)) { //もしもゲームパッドの右ボタンが押されていたら。
+	if (g_pad[0]->IsPress(enButtonRight)) { //もしもゲームパッドの右ボタンが押されていたら。
 		moveSpeed.x = fSpeed;
 	}
-	if (Pad(0).IsPress(enButtonLeft)) {  //もしもゲームパッドの左ボタンが推されていたら。
+	if (g_pad[0]->IsPress(enButtonLeft)) {  //もしもゲームパッドの左ボタンが推されていたら。
 		moveSpeed.x = -fSpeed;
 	}
-	if (Pad(0).IsPress(enButtonUp)) {
+	if (g_pad[0]->IsPress(enButtonUp)) {//もしもゲームパッドの上ボタンが押されていたら。
 		moveSpeed.z = fSpeed;
 	}
-	if (Pad(0).IsPress(enButtonDown)) {
+	if (g_pad[0]->IsPress(enButtonDown)) {//もしもゲームパッドの下ボタンが押されていたら。
 		moveSpeed.z = -fSpeed;
 	}
-	if (Pad(0).IsTrigger(enButtonA)) {
+	if (g_pad[0]->IsTrigger(enButtonA)) {//もしもゲームパッドのAボタンが押されていたら。
 		//ジャンプする。
 		moveSpeed.y = 40.0f;
 	}
@@ -91,24 +91,24 @@ void Player::Move()
 void Player::Rotation()
 {
 	
-	if (Pad(0).IsPress(enButtonRight)) {
-		rotation.SetRotationDeg(CVector3::AxisY, 90.0f);
-		//rotation.SetRotation(CVector3::AxisY, CMath::PI * 0.5f);	//ラジアン単位の別解。
+	if (g_pad[0]->IsPress(enButtonRight)) {
+		rotation.SetRotationDeg(g_vec3AxisY, 90.0f);
+		//rotation.SetRotation(g_vec3AxisY, CMath::PI * 0.5f);	//ラジアン単位の別解。
 	}
 	
-	if (Pad(0).IsPress(enButtonLeft)) {
-		rotation.SetRotationDeg(CVector3::AxisY, -90.0f);
-		//rotation.SetRotation(CVector3::AxisY, CMath::PI * -0.5f);	//ラジアン単位の別解。
+	if (g_pad[0]->IsPress(enButtonLeft)) {
+		rotation.SetRotationDeg(g_vec3AxisY, -90.0f);
+		//rotation.SetRotation(g_vec3AxisY, CMath::PI * -0.5f);	//ラジアン単位の別解。
 	}
 	
-	if (Pad(0).IsPress(enButtonUp)) {
-		rotation.SetRotationDeg(CVector3::AxisY, 0.0f);
-		//rotation.SetRotation(CVector3::AxisY, 0.0f);		//ラジアン単位の別解。
+	if (g_pad[0]->IsPress(enButtonUp)) {
+		rotation.SetRotationDeg(g_vec3AxisY, 0.0f);
+		//rotation.SetRotation(g_vec3AxisY, 0.0f);		//ラジアン単位の別解。
 	}
 	
-	if (Pad(0).IsPress(enButtonDown)) {
-		rotation.SetRotationDeg(CVector3::AxisY, 180.0f);
-		//rotation.SetRotation(CVector3::AxisY, CMath::PI);	//ラジアン単位の別解。
+	if (g_pad[0]->IsPress(enButtonDown)) {
+		rotation.SetRotationDeg(g_vec3AxisY, 180.0f);
+		//rotation.SetRotation(g_vec3AxisY, CMath::PI);	//ラジアン単位の別解。
 	}
 
 	//モデルに回転を反映させる。
@@ -120,22 +120,24 @@ void Player::AnimationControl()
 	if (charaCon.IsJump() == false) {
 		
 		//HandsOn 1 走りアニメーションを再生してみよう。
-		if (Pad(0).IsPress(enButtonUp)) {
+		if (g_pad[0]->IsPress(enButtonUp)) {
 			//ゲームパッドの上ボタンが押されているなら。
 			//走るアニメーションを再生する。
 			skinModelRender->PlayAnimation(enAnimationClip_run);
 		}
-		else if (Pad(0).IsPress(enButtonDown)) {
+		else if (g_pad[0]->IsPress(enButtonDown)) {
 			//ゲームパッドの下ボタンが押されているなら。
 			//走るアニメーションを再生する。
 			skinModelRender->PlayAnimation(enAnimationClip_run);
 		}
-		else if (Pad(0).IsPress(enButtonRight)) {
+		else if (g_pad[0]->IsPress(enButtonRight)) {
 			//ゲームパッドの右ボタンが押されているなら。
+			//走るアニメーションを再生する。
 			skinModelRender->PlayAnimation(enAnimationClip_run);
 		}
-		else if (Pad(0).IsPress(enButtonLeft)) {
+		else if (g_pad[0]->IsPress(enButtonLeft)) {
 			//ゲームパッドの左ボタンが押されているなら。
+			//走るアニメーションを再生する。
 			skinModelRender->PlayAnimation(enAnimationClip_run);
 		}
 		else {
@@ -144,13 +146,14 @@ void Player::AnimationControl()
 		}
 	}
 	//ジャンプ中でなければ。
-	if (Pad(0).IsTrigger(enButtonA)) {
+	if (g_pad[0]->IsTrigger(enButtonA)) {
+		//ジャンプアニメーションを再生する。
 		skinModelRender->PlayAnimation(enAnimationClip_jump);
 	}
 }
 void Player::Update()
 {
-	Move();
+	MoveSpeed();
 	Rotation();
 	AnimationControl();
 }
