@@ -1,3 +1,0 @@
-﻿  tkEngine.cpp
-XAudio2.lib(XAudio2_9.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR は XInput.lib(XINPUT1_4.dll) で定義されています。2 つ目以降の定義は無視されます。
-  tkEngine.vcxproj -> D:\Github\GamePG_2018\tkEngine2\Sample\Lesson04_Answer\Game\Preview\tkEngine.lib

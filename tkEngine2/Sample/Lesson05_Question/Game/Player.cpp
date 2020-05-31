@@ -29,16 +29,13 @@ bool Player::Start()
 	skinModelRender->SetShadowCasterFlag(true);
 
 	//HandsOn4 CCharacterControllerクラスのオブジェクトの初期化
-	charaCon.Init(
-		20.0f,		//キャラクターの半径。
-		75.0f,		//キャラクターの高さ。
-		position	//キャラクターの初期座標。
-	);
+	
+
 
 	
 	return true;
 }
-//キャラクターの移動処理。速度
+//キャラクターの移動処理。位置
 void Player::MovePosition()
 {
 	//キャラクターの移動処理。
@@ -81,52 +78,46 @@ void Player::MovePosition()
 //キャラクターの移動処理。速度
 void Player::MoveSpeed()
 {
+	// HandsOn6 キャラクターの移動速度を初期化しよう。
 	float fSpeed = 10.0f;
 	moveSpeed.x = 0.0f;
 	moveSpeed.z = 0.0f;
 	
-	/////////////////////////////////////////////////////////////////////////////////
 	//　実習課題 1 Bボタンを押しながら移動すると、移動速度が２倍になるようにしなさい。
-	/////////////////////////////////////////////////////////////////////////////////
-	if (g_pad[0]->IsPress(enButtonB)) {
-		fSpeed = fSpeed * 2.0f;
-	}
-	/////////////////////////////////////////////////////////////////////////////////
+	
+
 	//　実習課題 2 Yボタンを押しながら移動すると、移動速度が半分になるようにしなさい。
-	/////////////////////////////////////////////////////////////////////////////////
-	if (g_pad[0]->IsPress(enButtonY)) {
-		fSpeed = fSpeed / 2.0f;
-	}
-	if (g_pad[0]->IsPress(enButtonRight)) { //もしもゲームパッドの右ボタンが押されていたら。
-		moveSpeed.x = fSpeed;
-	}
-	if (g_pad[0]->IsPress(enButtonLeft)) {  //もしもゲームパッドの左ボタンが推されていたら。
-		moveSpeed.x = -fSpeed;
-	}
-	if (g_pad[0]->IsPress(enButtonUp)) {//もしもゲームパッドの上ボタンが押されていたら。
-		moveSpeed.z = fSpeed;
-	}
-	if (g_pad[0]->IsPress(enButtonDown)) {//もしもゲームパッドの下ボタンが押されていたら。
-		moveSpeed.z = -fSpeed;
-	}
-	if (g_pad[0]->IsTrigger(enButtonA)) {//もしもゲームパッドのAボタンが押されていたら。
-		//ジャンプする。
-		moveSpeed.y = 40.0f;
-	}
+	
 
-	//重力の影響を与える。
-	moveSpeed.y -= 2.0f;
+	// HandsOn7 キャラクターを左右に動かしてみよう。
+	
 
-	if (charaCon.IsJump() == false) {
-		isJump = false;
-	}
+
+
+	// HandsOn8 キャラクターを前後に動かしてみよう。
+	
+
+
+
+
+	// HandsOn9 キャラクターをジャンプさせて、重力を加えよう。
+	
+
+
+
+	
 
 	//移動はキャラクターコントローラーに移動速度を与えて行う。
 	//プレイヤーはキャラクタコントローラーによる移動結果を得るのみ。
 
 	//HandsOn5 CCharacterControllerクラスを使って、キャラクターを移動させる。
-	position = charaCon.Execute(1.0f, moveSpeed	);
 	
+
+	//HandsOn5が実装できれば下の3行のコメント(//)を消そう。
+	//if (charaCon.IsJump() == false) {
+	//	isJump = false;
+	//}
+
 	//モデルに座標を反映させる。
 	skinModelRender->SetPosition(position);
 }
@@ -160,7 +151,7 @@ void Player::Rotation()
 }
 void Player::AnimationControl()
 {
-	if ((charaCon.IsJump() == false) && (isJump == false)) {
+	if (isJump == false) {
 		
 		//HandsOn 1 走りアニメーションを再生してみよう。
 		if (g_pad[0]->IsPress(enButtonUp)) {

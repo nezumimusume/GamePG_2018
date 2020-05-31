@@ -34,6 +34,9 @@ bool Game::Start()
 	m_directionLight->SetColor({ 1.0f, 1.0f, 1.0f, 1.0f } );
 
 	GraphicsEngine().GetShadowMap().SetLightDirection(lightDir);
+
+	
+
 	return true;
 }
 void Game::Update()
