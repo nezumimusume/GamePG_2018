@@ -20,15 +20,14 @@ bool BackGround::Start()
 	skinModelRender->SetRotation(qRot);
 	skinModelRender->SetShadowReceiverFlag(true);
 	skinModelRender->SetShadowCasterFlag(true);
-	CVector3 pos = { 0.0f, -20.0f, 0.0f };
+	CVector3 pos = { 0.0f, -20.0f, 0.0f };//これは以下と同じ
+	//pos.x =  0.0f;
+	//pos.y =  -20.0f;
+	//pos.z =  0.0f;
 	skinModelRender->SetPosition(pos);
 
-	//HandsOn 2 CPhysicsStaticObjectの初期化
-	m_physicsStaticObject.CreateMeshObject(
-		skinModelRender,
-		pos,
-		qRot
-	);
+	//HandsOn2 CPhysicsStaticObjectクラスのオブジェクトの初期化
+	m_physicsStaticObject.CreateMeshObject(skinModelRender, pos, qRot);
 
 	return true;
 }

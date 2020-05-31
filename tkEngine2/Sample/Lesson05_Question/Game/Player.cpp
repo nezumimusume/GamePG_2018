@@ -28,16 +28,57 @@ bool Player::Start()
 	skinModelRender->SetShadowReceiverFlag(true);
 	skinModelRender->SetShadowCasterFlag(true);
 
-	//HandsOn 4 CCharacterControllerのインスタンスを初期化する。
+	//HandsOn4 CCharacterControllerクラスのオブジェクトの初期化
 	charaCon.Init(
-		20.0f,
-		68.0f,
-		position
+		20.0f,		//キャラクターの半径。
+		75.0f,		//キャラクターの高さ。
+		position	//キャラクターの初期座標。
 	);
+
 	
 	return true;
 }
-//キャラクターの移動処理。
+//キャラクターの移動処理。速度
+void Player::MovePosition()
+{
+	//キャラクターの移動処理。
+
+	if (g_pad[0]->IsPress(enButtonRight)) { //もしもゲームパッドの右ボタンが押されていたら。
+		position.x += 10.0f;                      //キーボードの６キー
+	}
+	if (g_pad[0]->IsPress(enButtonLeft)) {  //もしもゲームパッドの左ボタンが推されていたら。
+		position.x -= 10.0f;                      //キーボードの４キー
+	}
+	if (g_pad[0]->IsPress(enButtonUp)) {  //もしもゲームパッドの上ボタンが推されていたら。
+		position.z += 10.0f;                    //キーボードの８キー
+	}
+	if (g_pad[0]->IsPress(enButtonDown)) {  //もしもゲームパッドの下ボタンが推されていたら。
+		position.z -= 10.0f;                      //キーボードの２キー
+	}
+
+	//キャラクターを複製してみよう。
+	if (g_pad[0]->IsTrigger(enButtonSelect)) {//もしもゲームパッドのSelectボタンが押されていたら。
+		NewGO<Player>(0);                           //キーボードのスペースキー
+	}
+
+	//キャラクターをジャンプさせてみよう。
+	if (g_pad[0]->IsPress(enButtonA)) {  //もしもゲームパッドのAボタンが推されていたら。
+		position.y += 5.0f;                    //キーボードのJ キー
+	}
+	//重力の影響を与える。
+	position.y -= 0.5f;
+
+
+	//キャラクターのY座標が0より小さくなったら
+	//ジャンプ力を0にして、キャラのY座標も0にする。
+	if (position.y <= 0.0f) {
+		position.y = 0.0f;
+		isJump = false;
+	}
+	//モデルに座標を反映させる。
+	skinModelRender->SetPosition(position);
+}
+//キャラクターの移動処理。速度
 void Player::MoveSpeed()
 {
 	float fSpeed = 10.0f;
@@ -76,13 +117,15 @@ void Player::MoveSpeed()
 	//重力の影響を与える。
 	moveSpeed.y -= 2.0f;
 
+	if (charaCon.IsJump() == false) {
+		isJump = false;
+	}
+
 	//移動はキャラクターコントローラーに移動速度を与えて行う。
 	//プレイヤーはキャラクタコントローラーによる移動結果を得るのみ。
-	//HandsOn 5 CCharacterControllerを使って、キャラクターを移動させる。
-	position = charaCon.Execute(
-		1.0f,
-		moveSpeed
-	);
+
+	//HandsOn5 CCharacterControllerクラスを使って、キャラクターを移動させる。
+	position = charaCon.Execute(1.0f, moveSpeed	);
 	
 	//モデルに座標を反映させる。
 	skinModelRender->SetPosition(position);
@@ -117,7 +160,7 @@ void Player::Rotation()
 }
 void Player::AnimationControl()
 {
-	if (charaCon.IsJump() == false) {
+	if ((charaCon.IsJump() == false) && (isJump == false)) {
 		
 		//HandsOn 1 走りアニメーションを再生してみよう。
 		if (g_pad[0]->IsPress(enButtonUp)) {
@@ -149,10 +192,12 @@ void Player::AnimationControl()
 	if (g_pad[0]->IsTrigger(enButtonA)) {
 		//ジャンプアニメーションを再生する。
 		skinModelRender->PlayAnimation(enAnimationClip_jump);
+		isJump = true;
 	}
 }
 void Player::Update()
 {
+	//MovePosition();
 	MoveSpeed();
 	Rotation();
 	AnimationControl();

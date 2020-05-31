@@ -8,6 +8,7 @@ public:
 	~Player();
 	bool Start();
 	void Update();
+	void MovePosition();
 	void MoveSpeed();
 	void Rotation();
 	void AnimationControl();
@@ -21,12 +22,13 @@ public:
 	prefab::CSkinModelRender* skinModelRender = nullptr;	//スキンモデルレンダラー。
 	CAnimationClip animationClips[enAnimationClip_num];		//アニメーションクリップ。
 
-	
+	bool isJump = false;
 	CVector3 position ;
 	CQuaternion rotation ;
-	//HandsOn 3 PlayerクラスにCCharacterControllerのインスタンスを保持させる。
-	CCharacterController charaCon;
+	CVector3 moveSpeed;
 
-	CVector3 moveSpeed  ;
+	//HandsOn3 CCharacterControllerクラスのオブジェクトをメインメモリに展開し保持させる。
+	CCharacterController charaCon;
+	
 };
 
