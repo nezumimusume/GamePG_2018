@@ -78,7 +78,8 @@ namespace tkEngine{
 				obj->RenderWrapper(renderContext);
 			}
 		}
-
+		//物理ワールドのデバッグ描画。
+		PhysicsWorld().DebubDrawWorld(renderContext);
 		
 		EndGPUEvent();		
 

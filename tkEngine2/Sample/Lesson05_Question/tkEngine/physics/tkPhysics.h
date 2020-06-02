@@ -1,6 +1,7 @@
 #pragma once
 
 #include "tkEngine/Physics/tkCollisionAttr.h"
+#include "tkEngine/Physics/tkPhysicsDebugDraw.h"
 
 namespace tkEngine{
 	class CRigidBody;
@@ -12,6 +13,9 @@ namespace tkEngine{
 		btBroadphaseInterface*					overlappingPairCache = nullptr;	//!<ブロードフェーズ。衝突判定の枝切り。
 		btSequentialImpulseConstraintSolver*	constraintSolver = nullptr;		//!<コンストレイントソルバー。拘束条件の解決処理。
 		btDiscreteDynamicsWorld*				dynamicWorld = nullptr;			//!<ワールド。
+#if BUILD_LEVEL!=BUILD_LEVEL_MASTER
+		CPhysicsDebugDraw									 m_debugDraw;
+#endif
 	public:
 		CPhysicsWorld();
 		~CPhysicsWorld();
@@ -50,5 +54,6 @@ namespace tkEngine{
 		{
 			dynamicWorld->contactTest(colObj, resultCallback);
 		}
+		void DebubDrawWorld(CRenderContext& rc);
 	};
 }

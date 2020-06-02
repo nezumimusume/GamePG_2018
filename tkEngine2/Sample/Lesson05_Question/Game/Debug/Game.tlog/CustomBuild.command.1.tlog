@@ -1,0 +1,86 @@
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\SHADER\LIGHTINGFUNCTION.H
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\shader\LightingFunction.h D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\SHADER\MODELCB.H
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\shader\modelCB.h D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\SHADER\MODELSRV.H
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\shader\modelSRV.h D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\SHADER\MODELSTRUCT.H
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\shader\modelStruct.h D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\SHADER\SAMPLEBRDF.H
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\shader\sampleBRDF.h D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\MODELDATA\UNITYCHAN.TKS
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\modelData\unityChan.tks D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\SHADER\BLOOM.FX
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\shader\bloom.fx D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\SHADER\COPY.FX
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\shader\copy.fx D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\SHADER\FXAA.FX
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\shader\fxaa.fx D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\SHADER\LIGHTCULLING.FX
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\shader\LightCulling.fx D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\SHADER\MODEL.FX
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\shader\model.fx D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\SHADER\SPRITE.FX
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\shader\sprite.fx D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\SHADER\TONEMAP.FX
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\shader\tonemap.fx D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\SHADER\DITHERING.FX
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\shader\dithering.fx D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\FONT\MYFILE.SPRITEFONT
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\font\myfile.spritefont D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\SHADER\SHADOWBLUR.FX
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\shader\shadowBlur.fx D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEST.EFK
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\test.efk D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\BURST01.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\Burst01.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\CLOUD01.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\Cloud01.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\FLAME01.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\Flame01.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\LASERMAIN01.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\LaserMain01.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\LASERMAIN02.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\LaserMain02.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\PARTICLE01.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\Particle01.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\PARTICLE02.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\Particle02.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\PARTICLE03.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\Particle03.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\PARTICLE04_BOKASHISTRONG_HARD.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\Particle04_bokashistrong_hard.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\PARTICLE04_BOKASHISTRONG_SOFT.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\Particle04_bokashistrong_soft.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\PARTICLE04_BOKASHI_HARD.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\Particle04_bokashi_hard.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\PARTICLE04_BOKASHI_SOFT.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\Particle04_bokashi_soft.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\PARTICLE04_CLEAR_HARD.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\Particle04_clear_hard.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\PARTICLE04_CLEAR_SOFT.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\Particle04_clear_soft.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\SPLASH01.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\Splash01.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\SWORDLINE01.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\SwordLine01.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\THUNDER01.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\Thunder01.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\WIND01.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\Wind01.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\EFFECT\TEXTURE\WIND02.PNG
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\effect\Texture\wind02.png D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\ANIMDATA\CLEAR.TKA
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\animData\clear.tka D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\ANIMDATA\DAMAGE.TKA
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\animData\damage.tka D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\ANIMDATA\IDLE.TKA
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\animData\idle.tka D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\ANIMDATA\JUMP.TKA
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\animData\jump.tka D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\ANIMDATA\KNEELDOWN.TKA
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\animData\KneelDown.tka D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\ANIMDATA\RUN.TKA
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\animData\run.tka D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
+^D:\GITHUB\GAMEPG_2018\TKENGINE2\SAMPLE\LESSON05_ANSWER\GAME\ASSETS\ANIMDATA\WALK.TKA
+call D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\..\tkTools\tkContentTools.bat Assets\animData\walk.tka D:\Github\GamePG_2018\tkEngine2\Sample\Lesson05_Answer\Game\Debug\
