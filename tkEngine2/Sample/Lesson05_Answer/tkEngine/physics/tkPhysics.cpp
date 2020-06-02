@@ -55,6 +55,11 @@ namespace tkEngine{
 			);
 
 		dynamicWorld->setGravity(btVector3(0, -10, 0));
+#if BUILD_LEVEL!=BUILD_LEVEL_MASTER
+		m_debugDraw.Init();
+		dynamicWorld->setDebugDrawer(&m_debugDraw);
+		m_debugDraw.setDebugMode(1);
+#endif 
 	}
 	void CPhysicsWorld::Update()
 	{
@@ -67,5 +72,14 @@ namespace tkEngine{
 	void CPhysicsWorld::RemoveRigidBody(CRigidBody& rb)
 	{
 		dynamicWorld->removeRigidBody(rb.GetBody());
+	}
+	void CPhysicsWorld::DebubDrawWorld(CRenderContext& rc)
+	{
+#if BUILD_LEVEL!=BUILD_LEVEL_MASTER
+		
+		m_debugDraw.BeginDraw(rc);
+		dynamicWorld->debugDrawWorld();
+		m_debugDraw.EndDraw();
+#endif
 	}
 }
