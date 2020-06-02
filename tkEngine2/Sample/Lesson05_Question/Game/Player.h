@@ -28,7 +28,7 @@ public:
 	CVector3 moveSpeed;
 
 	//HandsOn3 CCharacterControllerクラスのオブジェクトをメインメモリに展開し保持させる。
-	CCharacterController charaCon;
+	
 	
 };
 

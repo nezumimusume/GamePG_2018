@@ -35,6 +35,7 @@ bool Player::Start()
 		position	//キャラクターの初期座標。
 	);
 
+
 	
 	return true;
 }
@@ -87,54 +88,34 @@ void Player::MoveSpeed()
 	moveSpeed.z = 0.0f;
 	
 	//　実習課題 1 Bボタンを押しながら移動すると、移動速度が２倍になるようにしなさい。
-	if (g_pad[0]->IsPress(enButtonB)) {  //キーボードのKキー
-		fSpeed = fSpeed * 2.0f;
-	}
+	//if (g_pad[0]->IsPress(enButtonB)) {  //キーボードのKキー
+	//	fSpeed = fSpeed * 2.0f;
+	//}
 
 	//　実習課題 2 Yボタンを押しながら移動すると、移動速度が半分になるようにしなさい。
-	if (g_pad[0]->IsPress(enButtonY)) {  //キーボードのIキー
-		fSpeed = fSpeed / 2.0f;
-	}
+	//if (g_pad[0]->IsPress(enButtonY)) {  //キーボードのIキー
+	//	fSpeed = fSpeed / 2.0f;
+	//}
 
 	// HandsOn7 キャラクターを左右に動かしてみよう。
-	//もしもゲームパッドの右ボタンが押されていたら。
-	if (g_pad[0]->IsPress(enButtonRight)) {   //キーボードの６キー
-		moveSpeed.x = fSpeed;
-	}
-	//もしもゲームパッドの左ボタンが押されていたら。
-	if (g_pad[0]->IsPress(enButtonLeft)) {  //キーボードの４キー  
-		moveSpeed.x = -fSpeed;
-	}
+	
 
 	// HandsOn8 キャラクターを前後に動かしてみよう。
-	//もしもゲームパッドの上ボタンが押されていたら。
-	if (g_pad[0]->IsPress(enButtonUp)) {   //キーボードの８キー
-		moveSpeed.z = fSpeed;
-	}
-	//もしもゲームパッドの下ボタンが押されていたら。
-	if (g_pad[0]->IsPress(enButtonDown)) {   //キーボードの２キー
-		moveSpeed.z = -fSpeed;
-	}
+	
 
 
 	// HandsOn9 キャラクターをジャンプさせて、重力を加えよう。
 	//もしもゲームパッドのAボタンが押されていたら。
-	if (g_pad[0]->IsTrigger(enButtonA)) {  //キーボードのJキー
-		//ジャンプする。
-		moveSpeed.y = 40.0f;
-	}
-	//重力の影響を与える。
-	moveSpeed.y -= 2.0f;
+	
 
-	if (charaCon.IsJump() == false) {
-		isJump = false;
-	}
+	//if (charaCon.IsJump() == false) {
+	//	isJump = false;
+	//}
 
 	//移動はキャラクターコントローラーに移動速度を与えて行う。
 	//プレイヤーはキャラクタコントローラーによる移動結果を得るのみ。
 
-	//HandsOn5 CCharacterControllerクラスを使って、キャラクターを移動させる。
-	position = charaCon.Execute(1.0f, moveSpeed	);
+
 	
 	//モデルに座標を反映させる。
 	skinModelRender->SetPosition(position);
@@ -169,9 +150,9 @@ void Player::Rotation()
 }
 void Player::AnimationControl()
 {
-	if ((charaCon.IsJump() == false) && (isJump == false)) {
+	if (isJump == false) {
 		
-		//HandsOn 1 走りアニメーションを再生してみよう。
+		//走りアニメーションを再生してみよう。
 		if (g_pad[0]->IsPress(enButtonUp)) {
 			//ゲームパッドの上ボタンが押されているなら。
 			//走るアニメーションを再生する。

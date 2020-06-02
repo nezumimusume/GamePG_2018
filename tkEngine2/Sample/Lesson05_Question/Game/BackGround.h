@@ -10,6 +10,8 @@ public:
 	prefab::CSkinModelRender* skinModelRender = nullptr;	//スキンモデルレンダラー。
 
 	//HandsOn1 静的物理オブジェクトをメインメモリに展開し保持させる。
-	CPhysicsStaticObject m_physicsStaticObject; //静的物理オブジェクト。
+	
+
+
 };
 
