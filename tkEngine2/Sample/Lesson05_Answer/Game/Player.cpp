@@ -127,9 +127,12 @@ void Player::MoveSpeed()
 	//重力の影響を与える。 
 	moveSpeed.y -= 2.0f;
 
+	// HandsOn9の後、文頭の【//】を消して、コードを変更しておきましょう。
 	if (charaCon.IsJump() == false) {
 		isJump = false;
 	}
+
+
 
 	//移動はキャラクターコントローラーに移動速度を与えて行う。
 	//プレイヤーはキャラクタコントローラーによる移動結果を得るのみ。

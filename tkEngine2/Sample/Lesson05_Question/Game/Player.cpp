@@ -104,7 +104,7 @@ void Player::MoveSpeed()
 	
 
 
-
+	// HandsOn9の後、文頭の【//】を消して、コードを変更しておきましょう。
 	//if (charaCon.IsJump() == false) {
 	//	isJump = false;
 	//}
