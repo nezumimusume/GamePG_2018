@@ -27,7 +27,7 @@ bool BackGround::Start()
 	skinModelRender->SetPosition(pos);
 
 	//HandsOn2 CPhysicsStaticObjectクラスのオブジェクトの初期化
-	//m_physicsStaticObject.CreateMeshObject(skinModelRender, pos, qRot);
+	m_physicsStaticObject.CreateMeshObject(skinModelRender, pos, qRot);
 
 	return true;
 }

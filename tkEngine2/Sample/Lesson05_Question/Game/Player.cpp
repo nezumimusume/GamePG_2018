@@ -150,7 +150,7 @@ void Player::AnimationControl()
 {
 	if (isJump == false) {
 		
-		//HandsOn 1 走りアニメーションを再生してみよう。
+		//走りアニメーションを再生してみよう。
 		if (g_pad[0]->IsPress(enButtonUp)) {
 			//ゲームパッドの上ボタンが押されているなら。
 			//走るアニメーションを再生する。
