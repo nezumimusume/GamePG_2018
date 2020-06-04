@@ -8,11 +8,14 @@
 
 namespace tkEngine {
 	CPad* g_pad[CPad::CONNECT_PAD_MAX];
+	CCamera* g_camera3D = nullptr;
+
 	CEngine::CEngine()
 	{
 		for (int i = 0; i < CPad::CONNECT_PAD_MAX; i++) {
 			g_pad[i] = &m_pad[i];
 		}
+		g_camera3D = &m_graphicsEngine.GetMainCamera();
 	}
 	CEngine::~CEngine()
 	{

@@ -73,6 +73,7 @@ namespace tkEngine {
 			localBoneIDtoGlobalBoneIDTbl.push_back(globalBoneID);
 		};
 
+
 		auto model = DirectX::Model::CreateFromCMO(
 			GraphicsEngine().GetD3DDevice(),
 			filePath,

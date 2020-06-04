@@ -150,6 +150,8 @@ namespace tkEngine{
 		CStopwatch				m_sw;
 	};
 	extern CPad* g_pad[CPad::CONNECT_PAD_MAX];
+	extern CCamera* g_camera3D ;
+
 	/*!
 	* @brief	Engineのインスタンスを取得。
 	*/

@@ -45,7 +45,7 @@ bool Game::Start()
 	for (int i = 0; i < locData.GetNumObject(); i++) {
 		//¯‚ðˆê‚Â‚Ã‚Âì¬‚µ‚Ä‚¢‚­B
 		CQuaternion qRot;
-		qRot.SetRotationDeg(CVector3::AxisY, 180.0f);
+		qRot.SetRotationDeg(g_vec3AxisY, 180.0f);
 		auto star = NewGO<Star>(0);
 		star->position = locData.GetObjectPosition(i);
 		qRot.Multiply(star->position);

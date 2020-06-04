@@ -16,7 +16,7 @@ bool BackGround::Start()
 	skinModelRender = NewGO<prefab::CSkinModelRender>(0);
 	skinModelRender->Init(L"modelData/backGround.cmo");
 	CQuaternion qRot;
-	qRot.SetRotationDeg(CVector3::AxisY, 180.0f);
+	qRot.SetRotationDeg(g_vec3AxisY, 180.0f);
 	skinModelRender->SetRotation(qRot);
 	skinModelRender->SetShadowReceiverFlag(true);
 	skinModelRender->SetShadowCasterFlag(true);

@@ -62,7 +62,7 @@ void Star::Update()
 	//スターを回転させる。
 	angle += 3.0f; //毎フレーム3°づつ回転を加算していく。
 	CQuaternion qRot;
-	qRot.SetRotationDeg(CVector3::AxisY, angle); //回転クォータニオンを作成。
+	qRot.SetRotationDeg(g_vec3AxisY, angle); //回転クォータニオンを作成。
 	skinModelRender->SetRotation(qRot);
 
 	//HandsOn 4 プレイヤーとの距離を計算して、130cm以下なら星を削除する。
