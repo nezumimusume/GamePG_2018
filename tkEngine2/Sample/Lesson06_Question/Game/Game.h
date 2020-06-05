@@ -5,7 +5,7 @@
 class Player;
 class BackGround;
 class GameCamera;
-class Star;
+//class Star;
 class Game : public IGameObject
 {
 public:
@@ -19,6 +19,6 @@ public:
 	BackGround* m_backGround = nullptr;
 	GameCamera* m_gameCamera = nullptr;
 	prefab::CDirectionLight* m_directionLight = nullptr;
-	std::vector<Star*> m_starList;
+	//std::vector<Star*> m_starList;
 };
 
