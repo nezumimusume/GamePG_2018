@@ -5,7 +5,7 @@
 #include "GameCamera.h"
 
 // HandsOn1　Starクラスの機能を使いたいのでヘッダーファイルをインクルードする
-#include "Star.h"
+
 
 #include "tkEngine/light/tkDirectionLight.h"
 
@@ -32,7 +32,7 @@ bool Game::Start()
 	m_gameCamera = NewGO<GameCamera>(0);
 	
 	//HandsOn2　Starクラスのオブジェクトを作成
-	NewGO<Star>(0);
+	
 
 	m_directionLight = NewGO<prefab::CDirectionLight>(0);
 	CVector3 lightDir = { 0.0f, -0.707, 0.707 };
