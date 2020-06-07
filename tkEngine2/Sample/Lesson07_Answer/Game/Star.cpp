@@ -6,7 +6,7 @@
 
 /////////////////////////////////////////////////
 // デストラクタ。
-// インスタンスが破棄されるときに呼ばれる。
+// メインメモリに展開したデータが破棄されるときに呼ばれる。
 /////////////////////////////////////////////////
 Star::~Star()
 {
@@ -19,7 +19,7 @@ Star::~Star()
 /////////////////////////////////////////////////
 bool Star::Start()
 {
-	//プレイヤーのインスタンスを名前で検索する。
+	//キャラクターのメインメモリに展開したデータを名前で検索する。
 	player = FindGO<Player>("UnityChan");
 
 	skinModelRender = NewGO<prefab::CSkinModelRender>(0);
@@ -33,7 +33,7 @@ bool Star::Start()
 	return true;
 }
 /////////////////////////////////////////////////
-// 更新関数
+// Update関数
 // 毎フレーム一定の間隔で呼ばれる。
 /////////////////////////////////////////////////
 void Star::Update()
@@ -56,9 +56,9 @@ void Star::Update()
 
 	
 	//スターを回転させる。
-	angle += 3.0f; //毎フレーム3°づつ回転を加算していく。
+	angle += 3.0f; //毎フレーム3°ずつ回転を加算していく。
 	CQuaternion qRot;
-	qRot.SetRotationDeg(CVector3::AxisY, angle); //回転クォータニオンを作成。
+	qRot.SetRotationDeg(g_vec3AxisY, angle); //回転クォータニオンを作成。
 	skinModelRender->SetRotation(qRot);
 
 	

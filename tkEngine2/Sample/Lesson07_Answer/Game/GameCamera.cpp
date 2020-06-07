@@ -13,7 +13,7 @@ GameCamera::~GameCamera()
 
 void GameCamera::Update()
 {
-	//プレイヤーのインスタンスを名前で検索する。
+	//プレイヤーのメインメモリに展開したデータを名前で検索する。
 	Player* pl = FindGO<Player>("UnityChan");
 
 	CVector3 cameraTarget;
@@ -27,8 +27,8 @@ void GameCamera::Update()
 	cameraPos = cameraTarget;
 	cameraPos.y += 400.0f;
 	cameraPos.z -= 600.0f;
-	MainCamera().SetPosition(cameraPos);
-	MainCamera().SetFar(30000.0f);
+	g_camera3D->SetPosition(cameraPos);
+	g_camera3D->SetFar(30000.0f);
 	//カメラ行列を更新する。
-	MainCamera().Update();
+	g_camera3D->Update();
 }

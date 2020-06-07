@@ -27,11 +27,11 @@ bool Game::Start()
 	m_bgmSource->Play(true);						//再生。
 
 	//カメラを設定。
-	MainCamera().SetTarget({ 0.0f, 100.0f, 0.0f });
-	MainCamera().SetNear(0.1f);
-	MainCamera().SetFar(3000.0f);
-	MainCamera().SetPosition({ 0.0f, 500.0f, -600.0f });
-	MainCamera().Update();
+	g_camera3D->SetTarget({ 0.0f, 100.0f, 0.0f });
+	g_camera3D->SetNear(0.1f);
+	g_camera3D->SetFar(3000.0f);
+	g_camera3D->SetPosition({ 0.0f, 500.0f, -600.0f });
+	g_camera3D->Update();
 
 	m_player = NewGO<Player>(0, "UnityChan");
 	m_backGround = NewGO<BackGround>(0);
@@ -51,7 +51,7 @@ bool Game::Start()
 	for (int i = 0; i < locData.GetNumObject(); i++) {
 		//星を一つづつ作成していく。
 		CQuaternion qRot;
-		qRot.SetRotationDeg(CVector3::AxisY, 180.0f);
+		qRot.SetRotationDeg(g_vec3AxisY, 180.0f);
 		auto star = NewGO<Star>(0);
 		star->position = locData.GetObjectPosition(i);
 		qRot.Multiply(star->position);
