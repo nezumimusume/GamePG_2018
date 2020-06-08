@@ -29,6 +29,11 @@ bool Player::Start()
 	skinModelRender->SetShadowReceiverFlag(true);
 	skinModelRender->SetShadowCasterFlag(true);
 
+	position = { -300.0f,1000.0f,0.0f }; //以下と同じこと
+	//position.x = -300.0f;
+	//position.y = 1000.0f;
+	//position.z = 0.0f;
+
 	charaCon.Init(
 		20.0f,		//キャラクターの半径。
 		75.0f,		//キャラクターの高さ。
