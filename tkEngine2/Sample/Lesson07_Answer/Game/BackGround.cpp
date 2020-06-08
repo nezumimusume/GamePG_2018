@@ -9,6 +9,7 @@ BackGround::BackGround()
 
 BackGround::~BackGround()
 {
+	DeleteGO(skinModelRender);
 }
 
 bool BackGround::Start()

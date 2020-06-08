@@ -9,6 +9,7 @@ Player::Player()
 
 Player::~Player()
 {
+	DeleteGO(skinModelRender);
 }
 bool Player::Start()
 {
@@ -30,7 +31,7 @@ bool Player::Start()
 
 	charaCon.Init(
 		20.0f,		//キャラクターの半径。
-		68.0f,		//キャラクターの高さ。
+		75.0f,		//キャラクターの高さ。
 		position	//キャラクターの初期座標。
 	);
 	
@@ -44,8 +45,11 @@ void Player::MoveSpeed()
 	moveSpeed.z = 0.0f;
 	
 
-	if (g_pad[0]->IsPress(enButtonB)) {
+	if (g_pad[0]->IsPress(enButtonB)) { //もしもゲームパッドのBボタンが押されていたら。
 		fSpeed *= 2.0f;
+	}
+	if (g_pad[0]->IsPress(enButtonY)) { //もしもゲームパッドのYボタンが押されていたら。
+		fSpeed /= 2.0f;
 	}
 	if (g_pad[0]->IsPress(enButtonRight)) { //もしもゲームパッドの右ボタンが押されていたら。
 		moveSpeed.x = fSpeed;
@@ -53,13 +57,13 @@ void Player::MoveSpeed()
 	if (g_pad[0]->IsPress(enButtonLeft)) {  //もしもゲームパッドの左ボタンが推されていたら。
 		moveSpeed.x -= fSpeed;
 	}
-	if (g_pad[0]->IsPress(enButtonUp)) {
+	if (g_pad[0]->IsPress(enButtonUp)) { //もしもゲームパッドの上ボタンが押されていたら。
 		moveSpeed.z = fSpeed;
 	}
-	if (g_pad[0]->IsPress(enButtonDown)) {
+	if (g_pad[0]->IsPress(enButtonDown)) { //もしもゲームパッドの下ボタンが押されていたら。
 		moveSpeed.z = -fSpeed;
 	}
-	if (g_pad[0]->IsTrigger(enButtonA)) {
+	if (g_pad[0]->IsTrigger(enButtonA)) { //もしもゲームパッドのAボタンが押されていたら。
 		//ジャンプする。
 		//実習課題　ジャンプ音を再生する。
 		prefab::CSoundSource* ss = NewGO<prefab::CSoundSource>(0);

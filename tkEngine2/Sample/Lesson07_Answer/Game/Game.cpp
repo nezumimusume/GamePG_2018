@@ -61,6 +61,12 @@ bool Game::Start()
 }
 void Game::Update()
 {
+	//ゲームをリセットしてみよう。
+	if (g_pad[0]->IsTrigger(enButtonSelect)) {//もしもゲームパッドのSelectボタンが押されていたら。
+		DeleteGO(this);                               //キーボードのスペースキー
+		NewGO<Game>(0, nullptr);
+	}
+
 }
 void Game::Render(CRenderContext& rc)
 {

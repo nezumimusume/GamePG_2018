@@ -21,7 +21,7 @@ void GameCamera::Update()
 	cameraTarget.y = pl->position.y + 100.0f;	//ƒvƒŒƒCƒ„[‚Ì‚¿‚å‚Á‚Æã‚É‚·‚éB
 	cameraTarget.z = pl->position.z;
 
-	MainCamera().SetTarget(cameraTarget);
+	g_camera3D->SetTarget(cameraTarget);
 	//‹“_‚Í’‹“_‚©‚ç‚x•ûŒü‚É{‚S‚O‚OA‚y•ûŒü‚É]‚U‚O‚O‚ÌêŠ‚É‚·‚éB
 	CVector3 cameraPos;
 	cameraPos = cameraTarget;
