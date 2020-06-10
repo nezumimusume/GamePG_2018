@@ -1,0 +1,2 @@
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson08_Answer\Game\Debug\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson08_Answer\tkEngine\DebugObjects\tkEngine.pdb

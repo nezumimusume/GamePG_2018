@@ -2,11 +2,8 @@
  *@brief	main.cpp
  */
 #include "stdafx.h"
-#include "Player.h"
-#include "Bullet.h"
-#include "EnemyGenerator.h"
 
-//これがC++、コンソールアプリケーションのmain関数に相当します。
+
 int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLine, int nCmdShow)
 {
 	UNREFERENCED_PARAMETER(hPrevInstance);
@@ -39,19 +36,17 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 
 	//エンジンを初期化。
 	if (Engine().Init(initParam) == true) {
-		//カメラを初期化。
-		MainCamera().SetTarget({ 0.0f, 0.0f, 0.0f });
-		MainCamera().SetNear(0.1f);
-		MainCamera().SetFar(15000.0f);
-		MainCamera().SetPosition({ 0.0f, 0.0f, -10000.0f });
-		MainCamera().SetUpdateProjMatrixFunc(CCamera::enUpdateProjMatrixFunc_Ortho);
-		MainCamera().SetWidth(20000.0f);
-		MainCamera().SetHeight(20000.0f * 9.0f / 16.0f);
-		MainCamera().Update();
 
-		NewGO<EnemyGenerator>(0);
-		NewGO<Player>(0);
+		//カメラを初期化。
+		g_camera3D->SetTarget({ 0.0f, 0.0f, 0.0f });
+		g_camera3D->SetNear(0.1f);
+		g_camera3D->SetFar(15000.0f);
+		g_camera3D->SetPosition({ 0.0f, 0.0f, -10000.0f });
+		g_camera3D->Update();
+
+		//プレイヤーのインスタンスを作成。
 		
+
 		//ゲームループを実行。
 		Engine().RunGameLoop();
 	}
