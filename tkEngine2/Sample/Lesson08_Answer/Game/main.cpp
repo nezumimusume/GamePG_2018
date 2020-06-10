@@ -38,11 +38,11 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 	if (Engine().Init(initParam) == true) {
 
 		//カメラを初期化。
-		MainCamera().SetTarget({ 0.0f, 0.0f, 0.0f });
-		MainCamera().SetNear(0.1f);
-		MainCamera().SetFar(15000.0f);
-		MainCamera().SetPosition({ 0.0f, 0.0f, -10000.0f });
-		MainCamera().Update();
+		g_camera3D->SetTarget({ 0.0f, 0.0f, 0.0f });
+		g_camera3D->SetNear(0.1f);
+		g_camera3D->SetFar(15000.0f);
+		g_camera3D->SetPosition({ 0.0f, 0.0f, -10000.0f });
+		g_camera3D->Update();
 
 		//プレイヤーのインスタンスを作成。
 		NewGO<Player>(0);

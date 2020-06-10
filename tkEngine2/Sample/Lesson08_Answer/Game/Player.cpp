@@ -25,7 +25,7 @@ bool Player::Start()
 	m_skinModelRenderer->Init(L"modelData/AirPlane.cmo", NULL, 0, CSkinModel::enFbxUpAxisY);
 	//‰¡‚ðŒü‚©‚¹‚½‚¢‚Ì‚ÅAYŽ²Žü‚è‚É-90‹‰ñ‚·B
 	CQuaternion qRot;
-	qRot.SetRotationDeg(CVector3::AxisY, -90.0f);
+	qRot.SetRotationDeg(g_vec3AxisY, -90.0f);
 	m_skinModelRenderer->SetRotation(qRot);
 	return true;
 }
