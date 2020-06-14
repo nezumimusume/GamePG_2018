@@ -1,4 +1,5 @@
 ﻿  Assets\modelData\AirPlane.fbx
+main.obj : warning LNK4075: /EDITANDCONTINUE は /SAFESEH の指定によって無視されます。
   Game.vcxproj -> D:\Github\GamePG_2018\tkEngine2\Sample\Lesson08_Answer\Game\Debug\Game.exe
   ファイルが見つかりません - *.dds
   0 個のファイルをコピーしました

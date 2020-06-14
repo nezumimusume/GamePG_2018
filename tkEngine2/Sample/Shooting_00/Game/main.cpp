@@ -33,7 +33,6 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 	GraphicsEngine().GetShadowMap().SetFar(1000.0f);
 	GraphicsEngine().GetShadowMap().SetNear(50.0f);
 
-
 	//エンジンを初期化。
 	if (Engine().Init(initParam) == true) {
 
@@ -52,7 +51,6 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 	}
 	//エンジンの終了処理。
 	Engine().Final();
-
 	return 0;
 }
 
