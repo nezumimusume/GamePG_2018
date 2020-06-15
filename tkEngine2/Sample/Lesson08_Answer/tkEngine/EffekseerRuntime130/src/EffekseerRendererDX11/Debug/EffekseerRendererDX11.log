@@ -3,8 +3,8 @@
   EffekseerRenderer.IndexBufferBase.cpp
   EffekseerRenderer.ModelRendererBase.cpp
   EffekseerRenderer.PngTextureLoader.cpp
-  EffekseerRenderer.RenderStateBase.cpp
   EffekseerRenderer.Renderer.cpp
+  EffekseerRenderer.RenderStateBase.cpp
   EffekseerRenderer.RibbonRendererBase.cpp
   EffekseerRenderer.RingRendererBase.cpp
   EffekseerRenderer.SpriteRendererBase.cpp
@@ -18,13 +18,13 @@ D:\Github\GamePG_2018\tkEngine2\Sample\Lesson08_Answer\tkEngine\EffekseerRuntime
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\sdkddkver.h(238): message : 'WINVER' の以前の定義を確認してください (ソース ファイルをコンパイルしています ..\EffekseerRendererCommon\EffekseerRenderer.PngTextureLoader.cpp)
 D:\Github\GamePG_2018\tkEngine2\Sample\Lesson08_Answer\tkEngine\EffekseerRuntime130\src\EffekseerRendererCommon\EffekseerRenderer.PngTextureLoader.cpp(15,1): warning C4005: '_WIN32_WINNT': マクロが再定義されました。
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\sdkddkver.h(217): message : '_WIN32_WINNT' の以前の定義を確認してください (ソース ファイルをコンパイルしています ..\EffekseerRendererCommon\EffekseerRenderer.PngTextureLoader.cpp)
-  EffekseerRendererDX11.RenderState.cpp
   EffekseerRendererDX11.Renderer.cpp
+  EffekseerRendererDX11.RenderState.cpp
   EffekseerRendererDX11.Shader.cpp
   EffekseerRendererDX11.TextureLoader.cpp
+  EffekseerRendererDX11.VertexBuffer.cpp
 D:\Github\GamePG_2018\tkEngine2\Sample\Lesson08_Answer\tkEngine\EffekseerRuntime130\src\EffekseerRendererCommon\EffekseerRenderer.DXTK.DDSTextureLoader.cpp(1609,28): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
 D:\Github\GamePG_2018\tkEngine2\Sample\Lesson08_Answer\tkEngine\EffekseerRuntime130\src\EffekseerRendererCommon\EffekseerRenderer.DXTK.DDSTextureLoader.cpp(1620,23): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-  EffekseerRendererDX11.VertexBuffer.cpp
 D:\Github\GamePG_2018\tkEngine2\Sample\Lesson08_Answer\tkEngine\EffekseerRuntime130\src\EffekseerRendererDX11\EffekseerRenderer\EffekseerRendererDX11.ModelLoader.cpp(50,11): warning C4101: 'hr': ローカル変数は 1 度も使われていません。
 D:\Github\GamePG_2018\tkEngine2\Sample\Lesson08_Answer\tkEngine\EffekseerRuntime130\src\EffekseerRendererCommon\EffekseerRenderer.StandardRenderer.h(117,64): warning C4018: '>': signed と unsigned の数値を比較しようとしました。 (ソース ファイルをコンパイルしています EffekseerRenderer\EffekseerRendererDX11.Renderer.cpp)
 D:\Github\GamePG_2018\tkEngine2\Sample\Lesson08_Answer\tkEngine\EffekseerRuntime130\src\EffekseerRendererCommon\EffekseerRenderer.StandardRenderer.h(114): message : クラス テンプレート メンバー関数 'void EffekseerRenderer::StandardRenderer<EffekseerRendererDX11::RendererImplemented,EffekseerRendererDX11::Shader,EffekseerRendererDX11::Vertex,EffekseerRendererDX11::VertexDistortion>::BeginRenderingAndRenderingIfRequired(int32_t,int32_t &,void *&)' のコンパイル中 (ソース ファイルをコンパイルしています EffekseerRenderer\EffekseerRendererDX11.Renderer.cpp)
