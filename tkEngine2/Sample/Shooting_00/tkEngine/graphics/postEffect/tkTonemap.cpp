@@ -109,7 +109,7 @@ namespace tkEngine{
 		if (!m_isEnable) {
 			return;
 		}
-		CGraphicsEngine& ge = Engine().GetGraphicsEngine();
+		CGraphicsEngine& ge = g_engine->GetGraphicsEngine();
 		ge.BeginGPUEvent(L"CTonemap::CalcLuminanceAvarage");
 		
 		
@@ -227,7 +227,7 @@ namespace tkEngine{
 			return;
 		}
 		rc.SetRenderStep(enRenderStep_Toonmap);
-		CGraphicsEngine& ge = Engine().GetGraphicsEngine();
+		CGraphicsEngine& ge = g_engine->GetGraphicsEngine();
 		ge.BeginGPUEvent(L"enRenderStep_Toonmap");
 		m_tonemapParam.deltaTime = GameTime().GetFrameDeltaTime();
 		rc.UpdateSubresource(m_cbTonemapCommon, &m_tonemapParam);
