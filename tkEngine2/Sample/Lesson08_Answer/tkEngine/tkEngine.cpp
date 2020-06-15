@@ -9,9 +9,10 @@
 namespace tkEngine {
 	CPad* g_pad[CPad::CONNECT_PAD_MAX];
 	CCamera* g_camera3D = nullptr;
-
+	CEngine* g_engine = nullptr;
 	CEngine::CEngine()
 	{
+		g_engine = this;
 		for (int i = 0; i < CPad::CONNECT_PAD_MAX; i++) {
 			g_pad[i] = &m_pad[i];
 		}

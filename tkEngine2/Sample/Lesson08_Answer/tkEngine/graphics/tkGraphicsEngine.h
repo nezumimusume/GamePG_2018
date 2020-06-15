@@ -66,6 +66,8 @@ namespace tkEngine{
 		{
 			return m_effectEngine;
 		}
+		
+		
 		/*!
 		* @brief	シャドウマップを取得。
 		*/

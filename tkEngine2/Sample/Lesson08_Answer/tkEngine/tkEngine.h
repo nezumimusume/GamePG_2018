@@ -43,13 +43,9 @@ namespace tkEngine{
 		/*!
 		 *@brief	インスタンスを取得。
 		 */
-		static CEngine& GetInstance()
+		static void Boot()
 		{
-			static CEngine* instance = nullptr;
-			if(instance == nullptr){
-				instance = new CEngine;
-			}
-			return *instance;
+			new CEngine;
 		}
 		
 		/*!
@@ -74,6 +70,14 @@ namespace tkEngine{
 		CGraphicsEngine& GetGraphicsEngine()
 		{
 			return m_graphicsEngine;
+		}
+		void SetShadowMapFar(float f)
+		{
+			m_graphicsEngine.GetShadowMap().SetFar(f);
+		}
+		void SetShadowMapNear(float n)
+		{
+			m_graphicsEngine.GetShadowMap().SetNear(n);
 		}
 		/*!
 		 *@brief	物理ワールドの取得。
@@ -151,35 +155,30 @@ namespace tkEngine{
 	};
 	extern CPad* g_pad[CPad::CONNECT_PAD_MAX];
 	extern CCamera* g_camera3D ;
+	extern CEngine* g_engine;
 
-	/*!
-	* @brief	Engineのインスタンスを取得。
-	*/
-	static inline CEngine& Engine()
-	{
-		return CEngine::GetInstance();
-	}
+
 
 	/*!
 	* @brief	CSoundEngineのインスタンスを取得。
 	*/
 	static inline CSoundEngine& SoundEngine()
 	{
-		return Engine().GetSoundEngine();
+		return g_engine->GetSoundEngine();
 	}
 	/*!
 	* @brief	CGraphicsEngineのインスタンスを取得。
 	*/
 	static inline CGraphicsEngine& GraphicsEngine()
 	{
-		return Engine().GetGraphicsEngine();
+		return g_engine->GetGraphicsEngine();
 	}
 	/*!
 	 *@brief	CPhysicsWorldのインスタンスを取得。
 	 */
 	static inline CPhysicsWorld& PhysicsWorld()
 	{
-		return Engine().GetPhysicsWorld();
+		return g_engine->GetPhysicsWorld();
 	}
 	/*!
 	* @brief	メインカメラのインスタンスを取得。
@@ -221,7 +220,7 @@ namespace tkEngine{
 	 */
 	static inline CRandom& Random()
 	{
-		return Engine().GetRandom();
+		return g_engine->GetRandom();
 	}
 	
 }

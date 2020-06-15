@@ -44,8 +44,8 @@ namespace tkEngine{
 		m_psCombine.Load("shader/bloom.fx", "PSCombine", CShader::EnType::PS);
 		m_copyVS.Load("shader/copy.fx", "VSMain", CShader::EnType::VS);
 		m_copyPS.Load("shader/copy.fx", "PSMain", CShader::EnType::PS);
-		int w = Engine().GetGraphicsEngine().GetFrameBufferWidth();
-		int h = Engine().GetGraphicsEngine().GetFrameBufferHeight();
+		int w = g_engine->GetGraphicsEngine().GetFrameBufferWidth();
+		int h = g_engine->GetGraphicsEngine().GetFrameBufferHeight();
 
 		//輝度抽出用のレンダリングターゲットを作成。
 		DXGI_SAMPLE_DESC multiSampleDesc;
@@ -140,7 +140,7 @@ namespace tkEngine{
 		}
 		UpdateWeight(25.0f);
 		rc.SetRenderStep(enRenderStep_Bloom);
-		CGraphicsEngine& ge = Engine().GetGraphicsEngine();
+		CGraphicsEngine& ge = g_engine->GetGraphicsEngine();
 		ge.BeginGPUEvent(L"enRenderStep_Bloom");
 		rc.PSSetSampler(0, m_samplerState);
 		float clearColor[] = {
@@ -264,6 +264,6 @@ namespace tkEngine{
 		rc.PSUnsetShaderResource(2);
 		rc.PSUnsetShaderResource(3);
 
-		Engine().GetGraphicsEngine().EndGPUEvent();
+		g_engine->GetGraphicsEngine().EndGPUEvent();
 	}
 }
