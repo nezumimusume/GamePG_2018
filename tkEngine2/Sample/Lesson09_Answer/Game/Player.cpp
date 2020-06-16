@@ -29,29 +29,29 @@ bool Player::Start()
 void Player::MoveAndRotation()
 {
 	CQuaternion qRot = CQuaternion::Identity;
-	if (Pad(0).IsPress(enButtonRight)) {
+	if (g_pad[0]->IsPress(enButtonRight)) {
 		m_position.x += 200.0f;
 	}
-	if (Pad(0).IsPress(enButtonLeft)) {
+	if (g_pad[0]->IsPress(enButtonLeft)) {
 		m_position.x -= 200.0f;
 	}
-	if (Pad(0).IsPress(enButtonUp)) {
+	if (g_pad[0]->IsPress(enButtonUp)) {
 		m_position.y += 200.0f;
 		//Z軸周りの回転クォータニオンを作成。
-		qRot.SetRotationDeg(CVector3::AxisZ, -10.0f);
+		//qRot.SetRotationDeg(g_vec3AxisZ, -10.0f);
 	}
-	if (Pad(0).IsPress(enButtonDown)) {
+	if (g_pad[0]->IsPress(enButtonDown)) {
 		m_position.y -= 200.0f;
 		//Z軸周りの回転クォータニオンを作成。
-		qRot.SetRotationDeg(CVector3::AxisZ, 10.0f);
+		//qRot.SetRotationDeg(g_vec3AxisZ, 10.0f);
 	}
 	//Y軸周りに-90°回す回転クォータニオンを作成する。
 	CQuaternion qRot2;
-	qRot2.SetRotationDeg(CVector3::AxisY, -90.0f);
-	m_skinModelRenderer->SetRotation(qRot);
+	qRot2.SetRotationDeg(g_vec3AxisY, -90.0f);
+	m_skinModelRenderer->SetRotation(qRot2);
 
 	//qRotとqRot2のクォータニオンを合成。
-	qRot.Multiply(qRot2);
+	//qRot.Multiply(qRot2);
 
 	//もしもm_position.xが10000よりも大きくなったら。
 	if (m_position.x > 10000.0f) {
@@ -78,7 +78,7 @@ void Player::MoveAndRotation()
 	//座標をスキンモデルレンダラーに反映させる。
 	m_skinModelRenderer->SetPosition(m_position);
 	//回転をスキンモデルレンダラーに反映させる。
-	m_skinModelRenderer->SetRotation(qRot);
+	//m_skinModelRenderer->SetRotation(qRot);
 }
 //////////////////////////////////////////////////////////
 // 一定間隔で呼ばれる更新処理。
