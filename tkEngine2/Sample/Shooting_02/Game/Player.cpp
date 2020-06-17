@@ -95,6 +95,7 @@ void Player::MoveAndRotation() {
 //////////////////////////////////////////////////////////
 void Player::Update()
 {
+	//プレイヤーの移動と回転処理はMoveAndRotation関数にまとめたよ。
 	MoveAndRotation();
 
 

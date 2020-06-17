@@ -14,3 +14,5 @@ C:\Users\t-tsukamura\Desktop\Shooting_01\Game\Debug\tkEngine.pdb
 C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\DebugObjects\tkEngine.pdb
 C:\Users\t-tsukamura\Desktop\Shooting_02\Game\Debug\tkEngine.pdb
 C:\Users\t-tsukamura\Desktop\Shooting_02\tkEngine\DebugObjects\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_02\Game\Debug\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_02\tkEngine\DebugObjects\tkEngine.pdb

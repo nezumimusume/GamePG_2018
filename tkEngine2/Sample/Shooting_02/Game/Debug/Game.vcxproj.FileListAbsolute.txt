@@ -12,3 +12,5 @@ C:\Users\t-tsukamura\Desktop\Shooting_01\Game\Debug\Game.exe
 C:\Users\t-tsukamura\Desktop\Shooting_01\Game\Debug\Game.pdb
 C:\Users\t-tsukamura\Desktop\Shooting_02\Game\Debug\Game.exe
 C:\Users\t-tsukamura\Desktop\Shooting_02\Game\Debug\Game.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_02\Game\Debug\Game.exe
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_02\Game\Debug\Game.pdb
