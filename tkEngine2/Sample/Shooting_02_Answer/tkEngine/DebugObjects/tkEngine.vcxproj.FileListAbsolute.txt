@@ -1,0 +1,18 @@
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson08_Answer\Game\Debug\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson08_Answer\tkEngine\DebugObjects\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\Lesson08_Answer\Game\Debug\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\Lesson08_Answer\tkEngine\DebugObjects\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_00\Game\Debug\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_00\tkEngine\DebugObjects\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\Shooting_00\Game\Debug\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\Shooting_00\tkEngine\DebugObjects\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\Shooting_00_Answer\Game\Debug\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\Shooting_00_Answer\tkEngine\DebugObjects\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_10準備中\Chapter_10_Answer\Shooting_00_Answer\Game\Debug\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_10準備中\Chapter_10_Answer\Shooting_00_Answer\tkEngine\DebugObjects\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\Shooting_01\Game\Debug\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\DebugObjects\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\Shooting_02\Game\Debug\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\Shooting_02\tkEngine\DebugObjects\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\Shooting_02_Answer\Game\Debug\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\Shooting_02_Answer\tkEngine\DebugObjects\tkEngine.pdb
