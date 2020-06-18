@@ -35,19 +35,19 @@ bool Player::Start()
 void Player::MoveAndRotation() {
 	CQuaternion qRot1;
 	if (g_pad[0]->IsPress(enButtonRight)) {
-		m_position.x += 200.0f;
+		m_position.x += 100.0f;
 	}
 	if (g_pad[0]->IsPress(enButtonLeft)) {
-		m_position.x -= 200.0f;
+		m_position.x -= 100.0f;
 	}
 	if (g_pad[0]->IsPress(enButtonUp)) {
-		m_position.y += 200.0f;
+		m_position.y += 100.0f;
 		//Z軸周りの回転クォータニオンを作成。
 		qRot1.SetRotationDeg(g_vec3AxisZ, -20.0f);
 
 	}
 	if (g_pad[0]->IsPress(enButtonDown)) {
-		m_position.y -= 200.0f;
+		m_position.y -= 100.0f;
 		//Z軸周りの回転クォータニオンを作成。
 		qRot1.SetRotationDeg(g_vec3AxisZ, 20.0f);
 	}
