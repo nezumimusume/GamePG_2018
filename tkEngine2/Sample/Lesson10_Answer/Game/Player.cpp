@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "Player.h"
-
+#include "Bullet.h"
 
 //////////////////////////////////////////////////////////
 // コンストラクタ。インスタンスが生成されるときに呼ばれる処理。
@@ -30,25 +30,25 @@ bool Player::Start()
 void Player::MoveAndRotation()
 {
 	CQuaternion qRot = CQuaternion::Identity;
-	if (Pad(0).IsPress(enButtonRight)) {
+	if (g_pad[0]->IsPress(enButtonRight)) {
 		m_position.x += 200.0f;
 	}
-	if (Pad(0).IsPress(enButtonLeft)) {
+	if (g_pad[0]->IsPress(enButtonLeft)) {
 		m_position.x -= 200.0f;
 	}
-	if (Pad(0).IsPress(enButtonUp)) {
+	if (g_pad[0]->IsPress(enButtonUp)) {
 		m_position.y += 200.0f;
 		//Z軸周りの回転クォータニオンを作成。
-		qRot.SetRotationDeg(CVector3::AxisZ, -10.0f);
+		qRot.SetRotationDeg(g_vec3AxisZ, -10.0f);
 	}
-	if (Pad(0).IsPress(enButtonDown)) {
+	if (g_pad[0]->IsPress(enButtonDown)) {
 		m_position.y -= 200.0f;
 		//Z軸周りの回転クォータニオンを作成。
-		qRot.SetRotationDeg(CVector3::AxisZ, 10.0f);
+		qRot.SetRotationDeg(g_vec3AxisZ, 10.0f);
 	}
 	//Y軸周りに-90°回す回転クォータニオンを作成する。
 	CQuaternion qRot2;
-	qRot2.SetRotationDeg(CVector3::AxisY, -90.0f);
+	qRot2.SetRotationDeg(g_vec3AxisY, -90.0f);
 	m_skinModelRenderer->SetRotation(qRot);
 
 	//qRotとqRot2のクォータニオンを合成。
@@ -91,7 +91,7 @@ void Player::Update()
 	m_timer++;
 	//Aボタンが押された、かつm_timerが2以上なら、
 	//弾丸を生成する。
-	if (Pad(0).IsPress(enButtonA) && m_timer >= 2 ) {
+	if (g_pad[0]->IsPress(enButtonA) && m_timer >= 2 ) {
 		//直進する弾丸を作成。
 		Bullet* bullet = NewGO<Bullet>(0);
 		//弾丸の座標にプレイヤーの座標を代入する。

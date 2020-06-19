@@ -9,8 +9,8 @@ public:
 	///////////////////////////////
 	// ここからメンバ変数
 	///////////////////////////////
-	CVector3 m_moveSpeed = CVector3::Zero;						//エネミーの移動速度。
+	CVector3 m_moveSpeed ;						//エネミーの移動速度。
 	prefab::CSkinModelRender*	m_skinModelRender = nullptr;	//スキンモデルレンダー。
-	CVector3 m_position = CVector3::Zero;						//座標。
+	CVector3 m_position ;						//座標。
 };
 
