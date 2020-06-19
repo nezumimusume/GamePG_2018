@@ -21,7 +21,7 @@ void EnemyGenerator::Update()
 		enemy->m_position.x = 9000.0f;
 		//Y座標をランダムにする。
 		//GetRandDoubleは0.0～1.0をランダムに返してくる関数。
-		float t = Random().GetRandDouble();
+		float t = g_random->GetRandDouble();
 		//CMath::Leap関数は二つの値の間を線形補完する関数。
 		enemy->m_position.y = CMath::Lerp(t, -5000.0f, 5000.0f);
 

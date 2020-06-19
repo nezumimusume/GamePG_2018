@@ -1,1 +1,13 @@
-﻿  tkEngine.vcxproj -> C:\Users\t-tsukamura\Desktop\Shooting_03_Answer\Game\Debug\tkEngine.lib
+﻿  tkStructuredBuffer.cpp
+  tkVertexBuffer.cpp
+  tkShadowMap.cpp
+C:\Users\t-tsukamura\Desktop\Shooting_03_Answer\tkEngine\graphics\preRender\tkShadowMap.cpp(156,13): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_03_Answer\tkEngine\graphics\preRender\tkShadowMap.cpp(153,16): warning C4101: 'fNear': ローカル変数は 1 度も使われていません。
+C:\Users\t-tsukamura\Desktop\Shooting_03_Answer\tkEngine\graphics\preRender\tkShadowMap.cpp(153,10): warning C4101: 'fFar': ローカル変数は 1 度も使われていません。
+  tkZPrepass.cpp
+  tkPad.cpp
+  tkPointLight.cpp
+  tkEngine.cpp
+  コードを生成中...
+XAudio2.lib(XAudio2_9.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR は XInput.lib(XINPUT1_4.dll) で定義されています。2 つ目以降の定義は無視されます。
+  tkEngine.vcxproj -> C:\Users\t-tsukamura\Desktop\Shooting_03_Answer\Game\Debug\tkEngine.lib
