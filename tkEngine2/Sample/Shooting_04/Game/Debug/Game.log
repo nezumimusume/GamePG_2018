@@ -1,0 +1,11 @@
+﻿  Assets\modelData\AirPlane.fbx
+  Assets\modelData\bullet.FBX
+  Assets\modelData\Enemy.fbx
+  Enemy.cpp
+  EnemyGenerator.cpp
+C:\Users\t-tsukamura\Desktop\Shooting_04\Game\EnemyGenerator.cpp(24,11): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+  Player.cpp
+  コードを生成中...
+  Game.vcxproj -> C:\Users\t-tsukamura\Desktop\Shooting_04\Game\Debug\Game.exe
+  ファイルが見つかりません - *.dds
+  0 個のファイルをコピーしました
