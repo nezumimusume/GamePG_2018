@@ -108,6 +108,9 @@
     <CustomBuild Include="Assets\effect\fire.efk">
       <Filter>Assets\effect</Filter>
     </CustomBuild>
+    <CustomBuild Include="Assets\effect\Texture\Line01.png" />
+    <CustomBuild Include="Assets\effect\Texture\Particle01.png" />
+    <CustomBuild Include="Assets\effect\Texture\Particle02.png" />
   </ItemGroup>
   <ItemGroup>
     <MeshContentTask Include="Assets\modelData\AirPlane.fbx">
@@ -119,16 +122,5 @@
     <MeshContentTask Include="Assets\modelData\Enemy.fbx">
       <Filter>Assets\modelData</Filter>
     </MeshContentTask>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Assets\effect\Texture\Line01.png">
-      <Filter>Assets\effect\Texture</Filter>
-    </Image>
-    <Image Include="Assets\effect\Texture\Particle01.png">
-      <Filter>Assets\effect\Texture</Filter>
-    </Image>
-    <Image Include="Assets\effect\Texture\Particle02.png">
-      <Filter>Assets\effect\Texture</Filter>
-    </Image>
   </ItemGroup>
 </Project>
