@@ -89,7 +89,6 @@ void Player::MoveAndRotation() {
 
 }
 
-
 //////////////////////////////////////////////////////////
 // 一定間隔で呼ばれる更新処理。
 //////////////////////////////////////////////////////////
@@ -97,6 +96,7 @@ void Player::Update()
 {
 	//プレイヤーの移動と回転処理はMoveAndRotation関数にまとめたよ。
 	MoveAndRotation();
+
 	//タイマーをインクリメント。
 	m_timer++;
 	//Aボタンが押された、かつm_timerが20以上なら、
@@ -128,16 +128,7 @@ void Player::Update()
 		m_timer = 0;
 	}
 
-	//PlayerBulletという名前のゲームオブジェクトに対してクエリ(問い合わせ)を行う。
-	QueryGOs<Bullet>("EnemyBullet", [&](Bullet* bullet) {
-		//２点間の距離を計算する。
-		CVector3 diff = bullet->m_position - m_position;
-		if (diff.Length() < 500.0f) {	//距離が500以下になったら。
-			//死亡。
-			DeleteGO(this);
-		}
-		return true;
-		});
+
 
 }
 

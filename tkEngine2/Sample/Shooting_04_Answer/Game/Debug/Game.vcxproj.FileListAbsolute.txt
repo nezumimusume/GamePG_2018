@@ -20,3 +20,5 @@ C:\Users\t-tsukamura\Desktop\Shooting_03_Answer\Game\Debug\Game.exe
 C:\Users\t-tsukamura\Desktop\Shooting_03_Answer\Game\Debug\Game.pdb
 C:\Users\t-tsukamura\Desktop\Shooting_04\Game\Debug\Game.exe
 C:\Users\t-tsukamura\Desktop\Shooting_04\Game\Debug\Game.pdb
+C:\Users\t-tsukamura\Desktop\Chapter_14_Answer\Shooting_04_Answer\Game\Debug\Game.exe
+C:\Users\t-tsukamura\Desktop\Chapter_14_Answer\Shooting_04_Answer\Game\Debug\Game.pdb

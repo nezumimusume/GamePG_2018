@@ -1,0 +1,14 @@
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson08_Answer\Game\Debug\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson08_Answer\tkEngine\DebugObjects\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_00\Game\Debug\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_00\tkEngine\DebugObjects\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson09_Answer\Game\Debug\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson09_Answer\tkEngine\DebugObjects\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson10_Answer\Game\Debug\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson10_Answer\tkEngine\DebugObjects\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson11_Answer\Game\Debug\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson11_Answer\tkEngine\DebugObjects\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson12_Answer\Game\Debug\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson12_Answer\tkEngine\DebugObjects\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson13_Answer\Game\Debug\tkEngine.pdb
+D:\Github\GamePG_2018\tkEngine2\Sample\Lesson13_Answer\tkEngine\DebugObjects\tkEngine.pdb

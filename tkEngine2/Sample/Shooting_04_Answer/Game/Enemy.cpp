@@ -62,12 +62,17 @@ void Enemy::Update()
 	QueryGOs<Bullet>("PlayerBullet", [&](Bullet* bullet) {
 		//２点間の距離を計算する。
 		CVector3 diff = bullet->m_position - m_position;
-		if (diff.Length() < 2000.0f) {	//距離が2000以下になったら。
+		if (diff.Length() < 500.0f) {	//距離が500以下になったら。
 			//死亡。
 			DeleteGO(this);
+			//falseを返したらクエリは終了。
+			return false;
 		}
+		//trueを返したらクエリは継続。
 		return true;
-		});
+	});
+
+
 
 
 }

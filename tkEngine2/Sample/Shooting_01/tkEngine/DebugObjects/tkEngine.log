@@ -1,8 +1,8 @@
 ﻿  tkEnginePreCompile.cpp
-C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\math\tkVector.h(454,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\math\tkVector.h(455,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\math\tkVector.h(464,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\math\tkVector.h(465,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\tkEngine\math\tkVector.h(454,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\tkEngine\math\tkVector.h(455,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\tkEngine\math\tkVector.h(464,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\tkEngine\math\tkVector.h(465,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
   tkCameraCollisionSolver.cpp
   tkSpringCamera.cpp
   tkCharacterController.cpp
@@ -13,11 +13,11 @@ C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\math\tkVector.h(465,11): warni
   tkSprite.cpp
   tkSpriteRender.cpp
   tkAnimationFootIK.cpp
-C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\graphics\animation\postProcess\tkAnimationFootIK.cpp(140,17): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\tkEngine\graphics\animation\postProcess\tkAnimationFootIK.cpp(140,17): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
   tkAnimation.cpp
   tkAnimationClip.cpp
-C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\graphics\animation\tkAnimationClip.cpp(37,23): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
-C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\graphics\animation\tkAnimationClip.cpp(55,22): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\tkEngine\graphics\animation\tkAnimationClip.cpp(37,23): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\tkEngine\graphics\animation\tkAnimationClip.cpp(55,22): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
   tkAnimationPlayController.cpp
   tkEffect.cpp
   tkEffectEngine.cpp
@@ -32,22 +32,22 @@ C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\graphics\animation\tkAnimation
   tkShaderResourceView.cpp
   tkUnorderedAccessView.cpp
   tkBloom.cpp
-C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\graphics\postEffect\tkBloom.cpp(247,70): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\graphics\postEffect\tkBloom.cpp(247,49): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\tkEngine\graphics\postEffect\tkBloom.cpp(247,70): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\tkEngine\graphics\postEffect\tkBloom.cpp(247,49): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
   tkDithering.cpp
   tkFxaa.cpp
   tkPostEffect.cpp
   tkTonemap.cpp
-C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\graphics\postEffect\tkTonemap.cpp(245,59): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\graphics\postEffect\tkTonemap.cpp(245,43): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\tkEngine\graphics\postEffect\tkTonemap.cpp(245,59): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\tkEngine\graphics\postEffect\tkTonemap.cpp(245,43): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
   tkGBufferRender.cpp
   tkLightCulling.cpp
   tkPreRender.cpp
   tkShadowCaster.cpp
   tkShadowMap.cpp
-C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\graphics\preRender\tkShadowMap.cpp(156,13): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\graphics\preRender\tkShadowMap.cpp(153,16): warning C4101: 'fNear': ローカル変数は 1 度も使われていません。
-C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\graphics\preRender\tkShadowMap.cpp(153,10): warning C4101: 'fFar': ローカル変数は 1 度も使われていません。
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\tkEngine\graphics\preRender\tkShadowMap.cpp(156,13): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\tkEngine\graphics\preRender\tkShadowMap.cpp(153,16): warning C4101: 'fNear': ローカル変数は 1 度も使われていません。
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\tkEngine\graphics\preRender\tkShadowMap.cpp(153,10): warning C4101: 'fFar': ローカル変数は 1 度も使われていません。
   tkZPrepass.cpp
   tkBlur.cpp
   tkCamera.cpp
@@ -94,4 +94,4 @@ C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\graphics\preRender\tkShadowMap
   tkEngine.cpp
   コードを生成中...
 XAudio2.lib(XAudio2_9.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR は XInput.lib(XINPUT1_4.dll) で定義されています。2 つ目以降の定義は無視されます。
-  tkEngine.vcxproj -> C:\Users\t-tsukamura\Desktop\Shooting_01\Game\Debug\tkEngine.lib
+  tkEngine.vcxproj -> C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\Game\Debug\tkEngine.lib

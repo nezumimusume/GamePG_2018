@@ -110,7 +110,7 @@ void Player::Update()
 		bullet->m_moveSpeed.x = 200.0f;
 
 		//斜め上に進む弾丸を作成。
-		bullet = NewGO<Bullet>(0);
+		bullet = NewGO<Bullet>(0, "PlayerBullet");
 		//弾丸の座標にプレイヤーの座標を代入する。
 		bullet->m_position = m_position;
 		//X軸方向に200の速度を設定する。
@@ -118,7 +118,7 @@ void Player::Update()
 		bullet->m_moveSpeed.y = 100.0f;
 
 		//斜め下に進む弾丸を作成。
-		bullet = NewGO<Bullet>(0);
+		bullet = NewGO<Bullet>(0, "PlayerBullet");
 		//弾丸の座標にプレイヤーの座標を代入する。
 		bullet->m_position = m_position;
 		//X軸方向に200の速度を設定する。

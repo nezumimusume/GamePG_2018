@@ -202,7 +202,8 @@
       <EnableDPIAwareness>true</EnableDPIAwareness>
     </Manifest>
     <PreBuildEvent>
-      <Command>call $(ProjectDir)../tkTools/preBuild.bat</Command>
+      <Command>
+      </Command>
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>call $(ProjectDir)../tkTools/PostBuild.bat</Command>

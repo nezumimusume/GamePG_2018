@@ -12,3 +12,5 @@ C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_10準備中\Chapter_10_Answer\Shooti
 C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_10準備中\Chapter_10_Answer\Shooting_00_Answer\tkEngine\DebugObjects\tkEngine.pdb
 C:\Users\t-tsukamura\Desktop\Shooting_01\Game\Debug\tkEngine.pdb
 C:\Users\t-tsukamura\Desktop\Shooting_01\tkEngine\DebugObjects\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11_Answer\Shooting_01_Answer\Game\Debug\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11_Answer\Shooting_01_Answer\tkEngine\DebugObjects\tkEngine.pdb

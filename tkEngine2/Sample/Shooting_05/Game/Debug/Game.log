@@ -2,70 +2,70 @@
   Assets\modelData\bullet.FBX
   Assets\modelData\Enemy.fbx
   stdafx.cpp
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2079,84): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2079,71): warning C4100: 'count': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2079,52): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2081,108): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2081,83): warning C4100: 'instanceParameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2081,47): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2083,67): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2083,50): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2150,84): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2150,71): warning C4100: 'count': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2150,52): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2152,108): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2152,83): warning C4100: 'instanceParameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2152,47): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2154,67): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2154,50): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2221,84): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2221,71): warning C4100: 'count': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2221,52): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2223,108): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2223,83): warning C4100: 'instanceParameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2223,47): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2225,67): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2225,50): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2289,84): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2289,71): warning C4100: 'count': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2289,52): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2291,108): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2291,83): warning C4100: 'instanceParameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2291,47): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2293,67): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2293,50): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2370,84): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2370,71): warning C4100: 'count': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2370,52): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2372,108): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2372,83): warning C4100: 'instanceParameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2372,47): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2374,67): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2374,50): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2487,63): warning C4100: 'textureType': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2487,45): warning C4100: 'path': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2496,35): warning C4100: 'data': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2546,38): warning C4100: 'path': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2555,29): warning C4100: 'data': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2988,38): warning C4100: 'path': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2997,29): warning C4100: 'source': 引数は関数の本体部で 1 度も参照されません。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\math\tkVector.h(454,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\math\tkVector.h(455,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\math\tkVector.h(464,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\math\tkVector.h(465,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\physics\tkCapsuleCollider.h(25,21): warning C4458: 'radius' を宣言すると、クラス メンバーが隠蔽されます
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\physics\tkCapsuleCollider.h(45,9): message : 'tkEngine::CCapsuleCollider::radius' の宣言を確認してください
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\physics\tkCapsuleCollider.h(25,35): warning C4458: 'height' を宣言すると、クラス メンバーが隠蔽されます
-C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\physics\tkCapsuleCollider.h(46,9): message : 'tkEngine::CCapsuleCollider::height' の宣言を確認してください
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2079,84): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2079,71): warning C4100: 'count': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2079,52): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2081,108): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2081,83): warning C4100: 'instanceParameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2081,47): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2083,67): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2083,50): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2150,84): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2150,71): warning C4100: 'count': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2150,52): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2152,108): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2152,83): warning C4100: 'instanceParameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2152,47): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2154,67): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2154,50): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2221,84): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2221,71): warning C4100: 'count': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2221,52): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2223,108): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2223,83): warning C4100: 'instanceParameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2223,47): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2225,67): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2225,50): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2289,84): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2289,71): warning C4100: 'count': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2289,52): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2291,108): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2291,83): warning C4100: 'instanceParameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2291,47): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2293,67): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2293,50): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2370,84): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2370,71): warning C4100: 'count': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2370,52): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2372,108): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2372,83): warning C4100: 'instanceParameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2372,47): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2374,67): warning C4100: 'userData': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2374,50): warning C4100: 'parameter': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2487,63): warning C4100: 'textureType': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2487,45): warning C4100: 'path': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2496,35): warning C4100: 'data': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2546,38): warning C4100: 'path': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2555,29): warning C4100: 'data': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2988,38): warning C4100: 'path': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\EffekseerRuntime130\src\include\Effekseer.h(2997,29): warning C4100: 'source': 引数は関数の本体部で 1 度も参照されません。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\math\tkVector.h(454,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\math\tkVector.h(455,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\math\tkVector.h(464,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\math\tkVector.h(465,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\physics\tkCapsuleCollider.h(25,21): warning C4458: 'radius' を宣言すると、クラス メンバーが隠蔽されます
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\physics\tkCapsuleCollider.h(45,9): message : 'tkEngine::CCapsuleCollider::radius' の宣言を確認してください
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\physics\tkCapsuleCollider.h(25,35): warning C4458: 'height' を宣言すると、クラス メンバーが隠蔽されます
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\tkEngine\physics\tkCapsuleCollider.h(46,9): message : 'tkEngine::CCapsuleCollider::height' の宣言を確認してください
   Bullet.cpp
   Enemy.cpp
-C:\Users\t-tsukamura\Desktop\Shooting_05\Game\Enemy.cpp(59,13): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\Game\Enemy.cpp(59,13): warning C4244: '=': 'float' から 'int' への変換です。データが失われる可能性があります。
   EnemyGenerator.cpp
-C:\Users\t-tsukamura\Desktop\Shooting_05\Game\EnemyGenerator.cpp(24,11): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\Game\EnemyGenerator.cpp(24,11): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
   main.cpp
   Player.cpp
   コードを生成中...
 Bullet.obj : warning LNK4075: /EDITANDCONTINUE は /SAFESEH の指定によって無視されます。
-  Game.vcxproj -> C:\Users\t-tsukamura\Desktop\Shooting_05\Game\Debug\Game.exe
+  Game.vcxproj -> D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\Game\Debug\Game.exe
   ファイルが見つかりません - *.dds
   0 個のファイルをコピーしました

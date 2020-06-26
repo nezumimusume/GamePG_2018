@@ -102,4 +102,4 @@
   btSubSimplexConvexCast.cpp
   btVoronoiSimplexSolver.cpp
   コードを生成中...
-  BulletCollision.vcxproj -> C:\Users\t-tsukamura\Desktop\Shooting_05\Game\Debug\BulletCollision_Debug.lib
+  BulletCollision.vcxproj -> D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\Game\Debug\BulletCollision_Debug.lib

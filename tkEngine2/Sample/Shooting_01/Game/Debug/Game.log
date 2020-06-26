@@ -1,7 +1,4 @@
-﻿  Assets\modelData\AirPlane.fbx
-  Player.cpp
-  main.cpp
-  コードを生成中...
-  Game.vcxproj -> C:\Users\t-tsukamura\Desktop\Shooting_01\Game\Debug\Game.exe
-  ファイルが見つかりません - *.dds
-  0 個のファイルをコピーしました
+﻿  'C:\Users\t-tsukamura\Desktop\GC1' は、内部コマンドまたは外部コマンド、
+  操作可能なプログラムまたはバッチ ファイルとして認識されていません。
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(139,5): error MSB3073: コマンド "call C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_11準備中\Chapter_11\Shooting_01\Game\../tkTools/preBuild.bat
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(139,5): error MSB3073: :VCEnd" はコード 1 で終了しました。

@@ -45,6 +45,8 @@
 #pragma warning(pop)
 #endif
 
+#include<iostream>
+
 #include <DirectXMath.h>
 #include <DirectXPackedVector.h>
 #include <DirectXCollision.h>
