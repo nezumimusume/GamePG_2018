@@ -1,10 +1,1 @@
-﻿  btAlignedAllocator.cpp
-  btConvexHull.cpp
-  btConvexHullComputer.cpp
-  btGeometryUtil.cpp
-  btPolarDecomposition.cpp
-  btQuickprof.cpp
-  btSerializer.cpp
-  btVector3.cpp
-  コードを生成中...
-  LinearMath.vcxproj -> D:\Github\GamePG_2018\tkEngine2\Sample\Shooting_05\Game\Debug\LinearMath_Debug.lib
+﻿  LinearMath.vcxproj -> C:\Users\t-tsukamura\Desktop\Shooting_05\Game\Debug\LinearMath_Debug.lib

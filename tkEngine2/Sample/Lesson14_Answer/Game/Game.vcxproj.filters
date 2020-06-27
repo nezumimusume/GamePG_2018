@@ -131,15 +131,11 @@
     </MeshContentTask>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Assets\sprite\GAMEOVER.png">
-      <Filter>Assets\sprite</Filter>
-    </Image>
-    <Image Include="..\..\Lesson13_Answer\Game\Assets\sprite\dummy.png">
-      <Filter>Assets\sprite</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
     <ImageContentTask Include="Assets\sprite\background.jpg">
+      <Filter>Assets\sprite</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\sprite\GAMEOVER.png" />
+    <ImageContentTask Include="..\..\Lesson13_Answer\Game\Assets\sprite\dummy.png">
       <Filter>Assets\sprite</Filter>
     </ImageContentTask>
   </ItemGroup>

@@ -26,3 +26,7 @@ C:\Users\t-tsukamura\Desktop\Shooting_04\Game\Debug\tkEngine.pdb
 C:\Users\t-tsukamura\Desktop\Shooting_04\tkEngine\DebugObjects\tkEngine.pdb
 C:\Users\t-tsukamura\Desktop\Shooting_05\Game\Debug\tkEngine.pdb
 C:\Users\t-tsukamura\Desktop\Shooting_05\tkEngine\DebugObjects\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_15完全版\Chapter_15_Answer\Shooting_05_Answer\Game\Debug\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_15完全版\Chapter_15_Answer\Shooting_05_Answer\tkEngine\DebugObjects\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\Shooting_05_Answer\Game\Debug\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\Shooting_05_Answer\tkEngine\DebugObjects\tkEngine.pdb

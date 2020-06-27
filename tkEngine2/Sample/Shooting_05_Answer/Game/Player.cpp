@@ -145,7 +145,10 @@ void Player::Update()
 			effect->SetPosition(m_position);	//エフェクトの発生位置として敵機の座標を渡す。
 
 			DeleteGO(this);
+			//falseを返したらクエリ(問い合わせ)は終了。
+			return false;
 		}
+		//trueを返したらクエリ(問い合わせ)は継続。
 		return true;
 		});
 

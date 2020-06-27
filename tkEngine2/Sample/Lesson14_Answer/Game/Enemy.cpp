@@ -25,7 +25,7 @@ bool Enemy::Start()
 	m_skinModelRender->SetScale(scale);
 	//横を向かせたいのでY軸周りに90°回転させる。
 	CQuaternion qRot;
-	qRot.SetRotationDeg(CVector3::AxisY, 90.0f);
+	qRot.SetRotationDeg(g_vec3AxisY, 90.0f);
 	//スキンモデルに回転クォータニオンを設定する。
 	m_skinModelRender->SetRotation(qRot);
 	m_moveSpeed.x = 50.0f;

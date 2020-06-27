@@ -135,7 +135,10 @@ void Player::Update()
 		if (diff.Length() < 500.0f) {	//距離が500以下になったら。
 			//死亡。
 			DeleteGO(this);
+			//falseを返したらクエリ(問い合わせ)は終了。
+			return false;
 		}
+		//trueを返したらクエリ(問い合わせ)は継続。
 		return true;
 		});
 

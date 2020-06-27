@@ -65,7 +65,10 @@ void Enemy::Update()
 		if (diff.Length() < 2000.0f) {	//距離が2000以下になったら。
 			//死亡。
 			DeleteGO(this);
+			//falseを返したらクエリ(問い合わせ)は終了。
+			return false;
 		}
+		//trueを返したらクエリ(問い合わせ)は継続。
 		return true;
 		});
 
