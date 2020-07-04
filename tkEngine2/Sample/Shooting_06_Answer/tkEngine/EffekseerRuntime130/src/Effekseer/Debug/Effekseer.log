@@ -1,0 +1,70 @@
+﻿  Culling3D.Grid.cpp
+  Culling3D.Layer.cpp
+  Culling3D.Matrix44.cpp
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.h(152,15): warning C4244: 'return': 'double' から 'float' への変換です。データが失われる可能性があります。 (ソース ファイルをコンパイルしています Effekseer\Culling\Culling3D.Grid.cpp)
+  Culling3D.ObjectInternal.cpp
+  Culling3D.ReferenceObject.cpp
+  Culling3D.Vector3DF.cpp
+  Culling3D.WorldInternal.cpp
+  Effekseer.Client.cpp
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.h(152,15): warning C4244: 'return': 'double' から 'float' への変換です。データが失われる可能性があります。 (ソース ファイルをコンパイルしています Effekseer\Culling\Culling3D.Matrix44.cpp)
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.h(152,15): warning C4244: 'return': 'double' から 'float' への変換です。データが失われる可能性があります。 (ソース ファイルをコンパイルしています Effekseer\Culling\Culling3D.Layer.cpp)
+  Effekseer.Color.cpp
+  Effekseer.CriticalSection.cpp
+  Effekseer.DefaultEffectLoader.cpp
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.h(152,15): warning C4244: 'return': 'double' から 'float' への変換です。データが失われる可能性があります。 (ソース ファイルをコンパイルしています Effekseer\Culling\Culling3D.ObjectInternal.cpp)
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.ObjectInternal.h(41,152): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。 (ソース ファイルをコンパイルしています Effekseer\Culling\Culling3D.ObjectInternal.cpp)
+  Effekseer.DefaultFile.cpp
+  Effekseer.Effect.cpp
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.h(152,15): warning C4244: 'return': 'double' から 'float' への変換です。データが失われる可能性があります。 (ソース ファイルをコンパイルしています Effekseer\Culling\Culling3D.Vector3DF.cpp)
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.Vector3DF.cpp(120,14): warning C4244: 'return': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.h(152,15): warning C4244: 'return': 'double' から 'float' への変換です。データが失われる可能性があります。 (ソース ファイルをコンパイルしています Effekseer\Culling\Culling3D.ReferenceObject.cpp)
+  Effekseer.EffectNode.cpp
+  Effekseer.EffectNodeModel.cpp
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.ObjectInternal.h(41,152): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。 (ソース ファイルをコンパイルしています Effekseer\Culling\Culling3D.Grid.cpp)
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.h(152,15): warning C4244: 'return': 'double' から 'float' への変換です。データが失われる可能性があります。 (ソース ファイルをコンパイルしています Effekseer\Culling\Culling3D.WorldInternal.cpp)
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.ObjectInternal.h(41,152): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。 (ソース ファイルをコンパイルしています Effekseer\Culling\Culling3D.Layer.cpp)
+  Effekseer.EffectNodeRibbon.cpp
+  Effekseer.EffectNodeRing.cpp
+  Effekseer.EffectNodeRoot.cpp
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.ObjectInternal.h(41,152): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。 (ソース ファイルをコンパイルしています Effekseer\Culling\Culling3D.WorldInternal.cpp)
+  Effekseer.EffectNodeSprite.cpp
+  Effekseer.EffectNodeTrack.cpp
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.h(152,15): warning C4244: 'return': 'double' から 'float' への変換です。データが失われる可能性があります。 (ソース ファイルをコンパイルしています Effekseer\Effekseer.Effect.cpp)
+  Effekseer.FCurves.cpp
+  Effekseer.Instance.cpp
+  Effekseer.InstanceContainer.cpp
+  Effekseer.InstanceGlobal.cpp
+  Effekseer.InstanceGroup.cpp
+  Effekseer.Setting.cpp
+  Effekseer.Manager.cpp
+  Effekseer.Matrix43.cpp
+  Effekseer.Matrix44.cpp
+  Effekseer.RectF.cpp
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.EffectNodeTrack.cpp(141,16): warning C4244: '初期化中': 'const float' から 'int32_t' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.EffectNodeTrack.cpp(142,21): warning C4244: '初期化中': 'const float' から 'int32_t' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.EffectNodeTrack.cpp(204,15): warning C4244: '初期化中': 'float' から 'int32_t' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.EffectNodeTrack.cpp(205,20): warning C4244: '初期化中': 'float' から 'int32_t' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.EffectNodeTrack.cpp(233,15): warning C4244: '初期化中': 'float' から 'int32_t' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.EffectNodeTrack.cpp(234,20): warning C4244: '初期化中': 'float' から 'int32_t' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.h(152,15): warning C4244: 'return': 'double' から 'float' への変換です。データが失われる可能性があります。 (ソース ファイルをコンパイルしています Effekseer\Effekseer.Instance.cpp)
+  Effekseer.Server.cpp
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.Instance.cpp(211,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.Instance.cpp(232,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  Effekseer.Socket.cpp
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.Instance.cpp(1373,82): warning C4244: '引数': 'float' から 'int32_t' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.Instance.cpp(1374,82): warning C4244: '引数': 'float' から 'int32_t' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.Instance.cpp(1375,82): warning C4244: '引数': 'float' から 'int32_t' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.Instance.cpp(1376,83): warning C4244: '引数': 'float' から 'int32_t' への変換です。データが失われる可能性があります。
+  Effekseer.Thread.cpp
+  Effekseer.Vector2D.cpp
+  Effekseer.Vector3D.cpp
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.h(152,15): warning C4244: 'return': 'double' から 'float' への変換です。データが失われる可能性があります。 (ソース ファイルをコンパイルしています Effekseer\Effekseer.InstanceGroup.cpp)
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.Matrix43.cpp(247,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.Matrix43.cpp(274,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.Matrix43.cpp(290,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Culling\Culling3D.h(152,15): warning C4244: 'return': 'double' から 'float' への変換です。データが失われる可能性があります。 (ソース ファイルをコンパイルしています Effekseer\Effekseer.Manager.cpp)
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.Manager.cpp(1249,24): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.Manager.cpp(1257,24): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\Effekseer\Effekseer.Vector3D.cpp(161,13): warning C4244: 'return': 'double' から 'float' への変換です。データが失われる可能性があります。
+  Effekseer.vcxproj -> C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\EffekseerRuntime130\src\Effekseer\..\lib\x86\Effekseer.Debug.lib
