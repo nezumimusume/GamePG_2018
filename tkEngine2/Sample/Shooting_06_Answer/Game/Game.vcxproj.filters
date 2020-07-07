@@ -118,6 +118,9 @@
     <CustomBuild Include="Assets\effect\Texture\Particle02.png">
       <Filter>Assets\effect\Texture</Filter>
     </CustomBuild>
+    <CustomBuild Include="Assets\sound\bgm.wav">
+      <Filter>Assets\sound</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <MeshContentTask Include="Assets\modelData\AirPlane.fbx">

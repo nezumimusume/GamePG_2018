@@ -17,6 +17,7 @@ bool BackGround::Start()
 		g_camera3D->GetHeight(), //”òs‹@‚ÌŒã‚ë‚É”wŒi‚ğ‘‚­‚½‚ß‚Ìˆ—B
 		true
 	);
+
 	return true;
 }
 

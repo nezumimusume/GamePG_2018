@@ -71,6 +71,12 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 		//背景のインスタンスを作成する。
 		NewGO<BackGround>(0);
 
+		//BGMを再生。
+		prefab::CSoundSource* ss = NewGO<prefab::CSoundSource>(0);
+		ss->Init("sound/bgm.wav");
+		ss->SetVolume(0.2f);
+		ss->Play(true);
+
 		//ゲームループを実行。
 		g_engine->RunGameLoop();
 	}

@@ -1,0 +1,10 @@
+﻿  Assets\modelData\AirPlane.fbx
+  Assets\modelData\bullet.FBX
+  Assets\modelData\Enemy.fbx
+  main.cpp
+  Player.cpp
+  コードを生成中...
+Bullet.obj : warning LNK4075: /EDITANDCONTINUE は /SAFESEH の指定によって無視されます。
+  Game.vcxproj -> C:\Users\t-tsukamura\Desktop\Shooting_06\Game\Debug\Game.exe
+  ファイルが見つかりません - *.dds
+  0 個のファイルをコピーしました
