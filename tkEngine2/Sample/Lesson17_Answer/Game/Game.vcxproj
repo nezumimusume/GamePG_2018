@@ -31,28 +31,28 @@
     <ProjectGuid>{06EDC280-1187-4614-A248-E640C095FA6B}</ProjectGuid>
     <RootNamespace>Game</RootNamespace>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|X64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|X64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -68,13 +68,13 @@
     <ConfigurationType>Application</ConfigurationType>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview|X64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|X64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -208,13 +208,14 @@
       <Command>call $(ProjectDir)../tkTools/PostBuild.bat</Command>
     </PostBuildEvent>
     <MeshContentTask>
-      <ContentOutput>$(ProjectDir)/Resource/modelData/%(Filename).cmo</ContentOutput>
+      <ContentOutput>%(RelativeDir)\%(Filename).cmo</ContentOutput>
     </MeshContentTask>
     <ImageContentTask>
       <ContentOutput>$(ProjectDir)/Resource/sprite/%(Filename).dds</ContentOutput>
     </ImageContentTask>
     <CustomBuild>
-      <Command>call $(ProjectDir)..\tkTools\tkContentTools.bat %(Identity) $(OutDir)</Command>
+      <Command>
+      </Command>
     </CustomBuild>
     <CustomBuild>
       <Message>tkContentTools</Message>
@@ -374,13 +375,14 @@
       <Command>call $(ProjectDir)../tkTools/PostBuild.bat</Command>
     </PostBuildEvent>
     <MeshContentTask>
-      <ContentOutput>$(ProjectDir)/Resource/modelData/%(Filename).cmo</ContentOutput>
+      <ContentOutput>%(RelativeDir)\%(Filename).cmo</ContentOutput>
     </MeshContentTask>
     <ImageContentTask>
       <ContentOutput>$(ProjectDir)/Resource/sprite/%(Filename).dds</ContentOutput>
     </ImageContentTask>
     <CustomBuild>
-      <Command>call $(ProjectDir)..\tkTools\tkContentTools.bat %(Identity) $(OutDir)</Command>
+      <Command>
+      </Command>
     </CustomBuild>
     <CustomBuild>
       <Message>tkContentTools</Message>
@@ -694,12 +696,12 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <MeshContentTask Include="Assets\modelData\AirPlane.fbx" />
-    <MeshContentTask Include="Assets\modelData\bullet.FBX" />
-    <MeshContentTask Include="Assets\modelData\Enemy.fbx" />
+    <CustomBuild Include="Assets\sound\explosion.wav">
+      <FileType>Document</FileType>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Assets\sound\explosion.wav">
+    <CustomBuild Include="Assets\sound\bgm.wav">
       <FileType>Document</FileType>
     </CustomBuild>
   </ItemGroup>
@@ -709,29 +711,12 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Assets\effect\Texture\Line01.png" />
-    <CustomBuild Include="Assets\effect\Texture\Particle01.png" />
-    <CustomBuild Include="Assets\effect\Texture\Particle02.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ImageContentTask Include="Assets\sprite\GAMEOVER.png">
-      <ContentOutput Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'">$(ProjectDir)/Resource/sprite/%(Filename).dds</ContentOutput>
-      <ContentOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectDir)/Resource/sprite/%(Filename).dds</ContentOutput>
-      <ContentOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectDir)/Resource/sprite/%(Filename).dds</ContentOutput>
-      <ContentOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)/Resource/sprite/%(Filename).dds</ContentOutput>
-      <ContentOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)/Resource/sprite/%(Filename).dds</ContentOutput>
-      <ContentOutput Condition="'$(Configuration)|$(Platform)'=='Preview|x64'">$(ProjectDir)/Resource/sprite/%(Filename).dds</ContentOutput>
-    </ImageContentTask>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\Lesson13_Answer\Game\Assets\sprite\dummy.png" />
-    <ImageContentTask Include="..\..\Lesson14_Answer\Game\Assets\sprite\Title.png" />
+    <Image Include="Assets\effect\Texture\Line01.png" />
+    <Image Include="Assets\effect\Texture\Particle01.png" />
+    <Image Include="Assets\effect\Texture\Particle02.png" />
     <ImageContentTask Include="Assets\sprite\background.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="Assets\sound\bgm.wav">
-      <FileType>Document</FileType>
-    </CustomBuild>
+    <ImageContentTask Include="Assets\sprite\GAMEOVER.png" />
+    <ImageContentTask Include="Assets\sprite\Title.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

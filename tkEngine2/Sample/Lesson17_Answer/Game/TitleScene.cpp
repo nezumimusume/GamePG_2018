@@ -23,7 +23,7 @@ bool TitleScene::Start()
 void TitleScene::Update()
 {
 	//もしもAボタンが押されたら。
-	if (Pad(0).IsTrigger(enButtonA)) {
+	if (g_pad[0]->IsTrigger(enButtonA)) {
 		//GameSceneのインスタンスを生成。
 		NewGO<GameScene>(0, "GameScene");
 		//シーンが切り替わるのでTitleSceneのインスタンスを削除。

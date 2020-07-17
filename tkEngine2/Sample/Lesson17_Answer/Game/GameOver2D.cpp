@@ -28,7 +28,7 @@ bool GameOver2D::Start()
 }
 void GameOver2D::Update()
 {
-	if (Pad(0).IsTrigger(enButtonA)) {
+	if (g_pad[0]->IsTrigger(enButtonA)) {
 		//ゲームシーンを削除する。
 		GameScene* gameScene = FindGO<GameScene>("GameScene");
 		DeleteGO(gameScene);		

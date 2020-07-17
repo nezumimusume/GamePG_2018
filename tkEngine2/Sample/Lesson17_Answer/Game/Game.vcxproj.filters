@@ -113,38 +113,32 @@
     <CustomBuild Include="Assets\sound\explosion.wav">
       <Filter>Assets\sound</Filter>
     </CustomBuild>
-    <CustomBuild Include="Assets\effect\fire.efk">
-      <Filter>Assets\effect</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Assets\effect\Texture\Line01.png" />
-    <CustomBuild Include="Assets\effect\Texture\Particle01.png" />
-    <CustomBuild Include="Assets\effect\Texture\Particle02.png" />
     <CustomBuild Include="Assets\sound\bgm.wav">
       <Filter>Assets\sound</Filter>
     </CustomBuild>
+    <CustomBuild Include="Assets\effect\fire.efk">
+      <Filter>Assets\effect</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <MeshContentTask Include="Assets\modelData\AirPlane.fbx">
-      <Filter>Assets\modelData</Filter>
-    </MeshContentTask>
-    <MeshContentTask Include="Assets\modelData\bullet.FBX">
-      <Filter>Assets\modelData</Filter>
-    </MeshContentTask>
-    <MeshContentTask Include="Assets\modelData\Enemy.fbx">
-      <Filter>Assets\modelData</Filter>
-    </MeshContentTask>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\Lesson13_Answer\Game\Assets\sprite\dummy.png">
-      <Filter>Assets\sprite</Filter>
+    <Image Include="Assets\effect\Texture\Particle01.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Particle02.png">
+      <Filter>Assets\effect\Texture</Filter>
+    </Image>
+    <Image Include="Assets\effect\Texture\Line01.png">
+      <Filter>Assets\effect\Texture</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
     <ImageContentTask Include="Assets\sprite\background.jpg">
       <Filter>Assets\sprite</Filter>
     </ImageContentTask>
-    <ImageContentTask Include="Assets\sprite\GAMEOVER.png" />
-    <ImageContentTask Include="..\..\Lesson14_Answer\Game\Assets\sprite\Title.png">
+    <ImageContentTask Include="Assets\sprite\GAMEOVER.png">
+      <Filter>Assets\sprite</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Assets\sprite\Title.png">
       <Filter>Assets\sprite</Filter>
     </ImageContentTask>
   </ItemGroup>
