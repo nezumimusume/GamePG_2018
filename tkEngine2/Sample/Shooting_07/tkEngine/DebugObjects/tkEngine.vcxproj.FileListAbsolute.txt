@@ -30,5 +30,5 @@ C:\Users\t-tsukamura\Desktop\Shooting_06\Game\Debug\tkEngine.pdb
 C:\Users\t-tsukamura\Desktop\Shooting_06\tkEngine\DebugObjects\tkEngine.pdb
 C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\Game\Debug\tkEngine.pdb
 C:\Users\t-tsukamura\Desktop\Shooting_06_Answer\tkEngine\DebugObjects\tkEngine.pdb
-C:\Users\t-tsukamura\Desktop\Chapter_17\Shooting_07\Game\Debug\tkEngine.pdb
-C:\Users\t-tsukamura\Desktop\Chapter_17\Shooting_07\tkEngine\DebugObjects\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_17\Chapter_17\Shooting_07\Game\Debug\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\GC1 PG\chapter_17\Chapter_17\Shooting_07\tkEngine\DebugObjects\tkEngine.pdb
