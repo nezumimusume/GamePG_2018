@@ -1,5 +1,5 @@
 #pragma once
-class TitleScene : public IGameObject // IGameObjectを継承
+class TitleScene : public IGameObject    // IGameObjectを継承
 {
 public:
 	TitleScene();
@@ -8,9 +8,10 @@ public:
 	bool Start();
 	//IGameObjectのUpdate関数をオーバーライドする。
 	void Update();
-	//オーバーライドとは子クラスで親クラスのメソッドを再定義するこ
+	//オーバーライドとは子クラスで親クラスのメソッドを再定義すること
 	//スプライトレンダラー
 	prefab::CSpriteRender* m_spriteRender = nullptr;
 
 };
+
 

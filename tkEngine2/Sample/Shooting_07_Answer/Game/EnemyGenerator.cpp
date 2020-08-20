@@ -2,12 +2,27 @@
 #include "EnemyGenerator.h"
 #include "Enemy.h"
 
+// コンストラクタ。インスタンスが生成されるときに呼ばれる処理。
 EnemyGenerator::EnemyGenerator()
 {
 }
-
+// デストラクタ。インスタンスが破棄されるときに呼ばれる処理。
 EnemyGenerator::~EnemyGenerator()
 {
+	//敵を削除。
+	QueryGOs<Enemy>("Enemy", [](Enemy* enemy)->bool
+		{
+			DeleteGO(enemy);
+			return true;
+		});
+	//BGMを削除。おまけです。
+	prefab::CSoundSource* bgm = FindGO<prefab::CSoundSource>("BGM");
+	DeleteGO(bgm);
+}
+bool EnemyGenerator::Start()
+{
+	TK_LOG("Start EnemyGenerator");
+	return true;
 }
 
 void EnemyGenerator::Update()
@@ -26,4 +41,5 @@ void EnemyGenerator::Update()
 		enemy->m_position.y = CMath::Lerp(t, -5000.0f, 5000.0f);
 
 	}
+	
 }

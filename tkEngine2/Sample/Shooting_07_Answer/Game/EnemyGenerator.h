@@ -5,6 +5,7 @@ public:
 	EnemyGenerator();
 	~EnemyGenerator();
 	void Update();
+	bool Start();
 	///////////////////////////////
 	// ‚±‚±‚©‚çƒƒ“ƒo•Ï”
 	///////////////////////////////

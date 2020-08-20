@@ -7,11 +7,14 @@
 #include "GameOver2D.h"
 #include "Bullet.h"
 
+// コンストラクタ。インスタンスが生成されるときに呼ばれる処理。
 GameScene::GameScene()
 {
 }
+// デストラクタ。インスタンスが破棄されるときに呼ばれる処理。
 GameScene::~GameScene()
 {
+	TK_LOG("GameScene");
 	//背景を削除。
 	BackGround* bg = FindGO<BackGround>("BackGround");
 	DeleteGO(bg);
@@ -19,7 +22,7 @@ GameScene::~GameScene()
 	//プレイヤーを削除。
 	Player* pl = FindGO<Player>("Player");
 	DeleteGO(pl);
-	
+
 	//敵機生成器を削除。
 	EnemyGenerator* enemyGenerator = FindGO<EnemyGenerator>("EnemyGenerator");
 	DeleteGO(enemyGenerator);
@@ -40,6 +43,7 @@ GameScene::~GameScene()
 	QueryGOs<Bullet>("EnemyBullet", [](Bullet* bullet)->bool
 		{
 			DeleteGO(bullet);
+			TK_LOG("EnemyBullet");
 			return true;
 		});
 
@@ -47,6 +51,7 @@ GameScene::~GameScene()
 	QueryGOs<Enemy>("Enemy", [](Enemy* enemy)->bool
 		{
 			DeleteGO(enemy);
+			TK_LOG("enemy");
 			return true;
 		});
 
@@ -78,14 +83,16 @@ bool GameScene::Start()
 	//背景のインスタンスを作成する。
 	NewGO<BackGround>(0, "BackGround");
 	//プレイヤーのインスタンスを作成。
-	NewGO<Player>(0, "Player");
+	NewGO<Player>(1, "Player");
 	//BGMを再生
 	prefab::CSoundSource* ss = NewGO<prefab::CSoundSource>(0, "BGM");
 	ss->Init("sound/bgm.wav");
-	ss->SetVolume(0.03f);
+	ss->SetVolume(0.2f);
 	ss->Play(true);
+
 	return true;
 }
 void GameScene::Update()
 {
+	
 }

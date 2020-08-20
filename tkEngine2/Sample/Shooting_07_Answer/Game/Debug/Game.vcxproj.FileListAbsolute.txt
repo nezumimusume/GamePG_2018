@@ -1,4 +1,0 @@
-C:\Users\t-tsukamura\Desktop\Chapter_17\Shooting_07\Game\Debug\Game.exe
-C:\Users\t-tsukamura\Desktop\Chapter_17\Shooting_07\Game\Debug\Game.pdb
-C:\Users\t-tsukamura\Desktop\Shooting_07\Game\Debug\Game.exe
-C:\Users\t-tsukamura\Desktop\Shooting_07\Game\Debug\Game.pdb

@@ -2,9 +2,11 @@
 #include "TitleScene.h"
 #include "GameScene.h"
 
+// コンストラクタ。インスタンスが生成されるときに呼ばれる処理。
 TitleScene::TitleScene()
 {
 }
+// デストラクタ。インスタンスが破棄されるときに呼ばれる処理。
 TitleScene::~TitleScene()
 {
 	DeleteGO(m_spriteRender);
@@ -28,3 +30,4 @@ void TitleScene::Update()
 	}
 
 }
+

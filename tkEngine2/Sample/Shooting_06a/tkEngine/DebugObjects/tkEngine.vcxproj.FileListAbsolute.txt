@@ -1,0 +1,2 @@
+C:\Users\t-tsukamura\Desktop\Shooting_06a\Game\Debug\tkEngine.pdb
+C:\Users\t-tsukamura\Desktop\Shooting_06a\tkEngine\DebugObjects\tkEngine.pdb

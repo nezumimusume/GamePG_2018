@@ -44,7 +44,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 
 	//エンジンを初期化。
 	if (g_engine->Init(initParam) == true) {
-/*
+		/*//これらはすべて不要になるのでコメントアウト。後でGame.cppに移動させるので消さないでね。
 		//カメラを初期化。
 		CVector3 target;
 		target.x = 0.0f;
@@ -65,21 +65,23 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPWSTR lpCmdLi
 		g_camera3D->Update();
 
 
-		//プレイヤーのインスタンスを作成。
-		NewGO<Player>(0);
+		
 		//敵機生成器のインスタンスを作成する。
-		NewGO<EnemyGenerator>(0);
+		NewGO<EnemyGenerator>(0, "EnemyGenerator");
 		//背景のインスタンスを作成する。
 		NewGO<BackGround>(0);
+		//プレイヤーのインスタンスを作成。
+		NewGO<Player>(1);
 
 		//BGMを再生。
-		prefab::CSoundSource* ss = NewGO<prefab::CSoundSource>(0);
+		prefab::CSoundSource* ss = NewGO<prefab::CSoundSource>(0, "BGM");
 		ss->Init("sound/bgm.wav");
 		ss->SetVolume(0.2f);
-		ss->Play(true);
-*/
+		ss->Play(true);*/
+
 		//タイトルシーンを作成。
 		NewGO<TitleScene>(0);
+
 
 		//ゲームループを実行。
 		g_engine->RunGameLoop();

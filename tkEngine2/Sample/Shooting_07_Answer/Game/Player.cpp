@@ -30,6 +30,8 @@ bool Player::Start()
 	qRot.SetRotationDeg(g_vec3AxisY, -90.0f);
 	m_skinModelRender->SetRotation(qRot);
 
+	TK_LOG("Start Player");
+
 	return true;
 }
 
@@ -146,7 +148,7 @@ void Player::Update()
 			effect->SetPosition(m_position);	//エフェクトの発生位置として敵機の座標を渡す。
 
 			//GameOver2Dを作成する。
-			NewGO<GameOver2D>(0, "GameOver2D");
+			NewGO<GameOver2D>(0);
 
 
 			DeleteGO(this);
